@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'proxima';
+    src: url('../fonts/Proxima_Nova/Mark Simonson - Proxima Nova Regular.otf');
+}
+@font-face {
+    font-family: 'proxima thin';
+    src: url('../fonts/Proxima_Nova/Mark Simonson - Proxima Nova Thin.otf');
+}
+@font-face {
+    font-family: 'proxima alt light';
+    src: url('../fonts/Proxima_Nova/Mark Simonson - Proxima Nova Alt Light.otf');
+}
+@font-face {
+    font-family: 'proxima light italic';
+    src: url('../fonts/Proxima_Nova/Mark Simonson - Proxima Nova Light Italic.otf');
+}

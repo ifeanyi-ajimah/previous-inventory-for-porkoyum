@@ -1,0 +1,100 @@
+.label {
+    padding: 5px;
+}
+hr{
+    width: 100%;
+}
+.table > thead > tr > th{
+    text-align: center;
+    padding: 10px 0;
+}
+thead{
+    background: #25a378;
+}
+.container{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.pagination li a:hover{
+    background: #0D47A1;
+    color: #eee;
+}
+.pagination li a, .pagination li span{
+    border: 0;
+    color: rgba(0,0,0,0.68);
+    font-weight: bold;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+    color: #fff;
+    background-color: gray;
+    width: 180px;
+    text-align: center;
+}
+.navbar-default .navbar-nav > .open:nth-child(2) > a, .navbar-default .navbar-nav > .open:nth-child(2) > a:focus, .navbar-default .navbar-nav > .open:nth-child(2) > a:hover {
+    color: #fff;
+    background-color: gray;
+    width: 220px;
+    text-align: center;
+}
+.navbar-default .navbar-nav > .open:nth-child(3) > a, .navbar-default .navbar-nav > .open:nth-child(3) > a:focus, .navbar-default .navbar-nav > .open:nth-child(3) > a:hover {
+    color: #fff;
+    background-color: gray;
+    width: 190px;
+    text-align: center;
+}
+.navbar-default .navbar-nav > .open:nth-child(4) > a, .navbar-default .navbar-nav > .open:nth-child(4) > a:focus, .navbar-default .navbar-nav > .open:nth-child(4) > a:hover {
+    color: #fff;
+    background-color: gray;
+    width: 205px;
+    text-align: center;
+}
+.action{
+    width: 55px;
+}
+.action .btn{
+    padding: 0 12px;
+    margin: 0;
+}
+.table-hover > tbody > tr:hover {
+    background: rgba(241, 241, 241, 0.1);
+}
+button.close.close-custom{
+    font-size: 40px;
+    font-weight: 200;
+    background: rgba(0,0,0,0.5);
+    opacity: 1;
+    color: white;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    line-height: 0;
+    position: relative;
+    top: 10px;
+}
+button.close.close-custom:hover{
+    background: rgba(0,0,0,0.65);
+}
+span.x-close{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 40%;
+}
+.modal-body{
+    color: black;
+}
+.modal-body table{
+    margin: 0 auto;
+}
+.modal-body td{
+    padding: 5px;
+}
+@media (max-width: 767px) {
+    .btn.dropdown-toggle{ padding: 5px 10px;}
+
+}
