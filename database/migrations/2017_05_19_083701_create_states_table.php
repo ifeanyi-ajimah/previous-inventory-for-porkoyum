@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddRegionToStatesTable extends Migration
+class CreateStatesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,13 @@ class AddRegionToStatesTable extends Migration
      */
     public function up()
     {
-        Schema::table('states', function (Blueprint $table) {
+        Schema::create('states', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('name');
             $table->integer('region_id')->unsigned();
+            $table->timestamps();
+
+            $table->foreign('region_id')->references('id')->on('regions')->onDelete('cascade');
         });
     }
 
@@ -25,8 +30,7 @@ class AddRegionToStatesTable extends Migration
      */
     public function down()
     {
-        Schema::table('states', function (Blueprint $table) {
-            $table->dropColumn('region_id');
-        });
+        Schema::dropIfExists('states');
     }
 }
+

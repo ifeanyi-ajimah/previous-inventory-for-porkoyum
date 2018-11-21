@@ -1,10 +1,11 @@
+
 <?php
 
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateInventoryStateTable extends Migration
+class CreateDeliveryPeopleTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +14,15 @@ class CreateInventoryStateTable extends Migration
      */
     public function up()
     {
-        Schema::create('inventory_state', function (Blueprint $table) {
+        Schema::create('delivery_people', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('product_id')->unsigned();
+            $table->string('fullname')->nullable();
             $table->integer('state_id')->unsigned();
-            $table->integer('quantity')->unsigned();
+            $table->integer('user_id')->unsigned();
             $table->timestamps();
+
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('state_id')->references('id')->on('states')->onDelete('cascade');
         });
     }
 
@@ -29,6 +33,6 @@ class CreateInventoryStateTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('inventory_state');
+        Schema::dropIfExists('delivery_people');
     }
 }

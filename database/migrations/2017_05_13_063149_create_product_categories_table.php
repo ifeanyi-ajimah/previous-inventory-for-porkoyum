@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateDeliveryPeopleTable extends Migration
+class CreateProductCategoriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,11 @@ class CreateDeliveryPeopleTable extends Migration
      */
     public function up()
     {
-        Schema::create('delivery_people', function (Blueprint $table) {
+        Schema::create('product_categories', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('fullname');
+            $table->string('category_name');
+            $table->string('dashboard_color');
+            $table->string('image');
             $table->timestamps();
         });
     }
@@ -27,6 +29,6 @@ class CreateDeliveryPeopleTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('delivery_people');
+        Schema::dropIfExists('product_categories');
     }
 }

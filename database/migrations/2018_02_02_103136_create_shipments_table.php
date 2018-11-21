@@ -19,6 +19,7 @@ class CreateShipmentsTable extends Migration
             $table->integer('product_id');
             $table->integer('intact');
             $table->integer('damaged');
+             $table->integer('available')->unsigned();
             $table->timestamps();
         });
     }

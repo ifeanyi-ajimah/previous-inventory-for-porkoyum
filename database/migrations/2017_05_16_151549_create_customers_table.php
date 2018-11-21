@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCommsExecsTable extends Migration
+class CreateCustomersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,13 @@ class CreateCommsExecsTable extends Migration
      */
     public function up()
     {
-        Schema::create('comms_execs', function (Blueprint $table) {
+        Schema::create('customers', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('fullname');
-            $table->string('display_name');
-            $table->integer('productcategories_id')->unsigned();
+            $table->string('name');
+            $table->text('address');
+            $table->string('phone_no');
+            $table->string('url')->nullable();
             $table->timestamps();
-
-            $table->foreign('productcategories_id')->references('id')->on('product_categories');
         });
     }
 
@@ -31,6 +30,6 @@ class CreateCommsExecsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('comms_execs');
+        Schema::dropIfExists('customers');
     }
 }
