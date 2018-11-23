@@ -19,6 +19,8 @@ Route::get('/', function () { return view('welcome'); });
 
 Route::get('/home', function () { return redirect('/dashboard'); });
 
+Route::get('/pee', 'ViewSomeController@index');
+
 Auth::routes();
 
 Route::post('/register', 'UserController@store')->name('register');
@@ -47,8 +49,8 @@ Route::middleware('auth')->group(function (){
 		}
 		return view('errors.newbie');
 	})->name('dashboard');
-	
-	
+
+
 	// Routes only Admins should see
 	Route::middleware('checkrole:admin')->group(function (){
 		Route::get('users/search', 'UserController@search');
@@ -72,12 +74,12 @@ Route::middleware('auth')->group(function (){
 		Route::get('confirmedorders', ['uses' => 'OrderByController@confirmedOrders', 'as' => 'orders.confirmed']);
 		Route::get('deliveredorders', ['uses' => 'OrderByController@deliveredOrders', 'as' => 'orders.delivered']);
 		Route::get('noturgentorders', ['uses' => 'OrderByController@noturgentOrders', 'as' => 'orders.noturgent']);
-		
+
 
 		Route::post('inventory/restock', 'StockController@store')->name('restock');
 		Route::post('/attachPermission', 'RoleController@attachPermission')->name('roles.attachPermission');
 		Route::post('/custStore', 'CustomerController@storeCustomer')->name('custajax.store');
-		
+
 		Route::delete('/productcategories/{category}', 'ProductCategoryController@destroy')->name('productcat.delete');
 		Route::delete('products/{product}', ['as' => 'products.destroy', 'uses' => 'ProductController@destroy']);
 	});
@@ -85,7 +87,7 @@ Route::middleware('auth')->group(function (){
 	// Routes only Cooms should see
 	Route::middleware('checkrole:comms-admin,admin')->group(function (){
 		Route::resource('/customers', 'CustomerController');
-		Route::resource('/commsexecs', 'CommsExecController'); 
+		Route::resource('/commsexecs', 'CommsExecController');
 	});
 
 	// Routes only Inventory should see
@@ -144,7 +146,3 @@ Route::middleware('auth')->group(function (){
 		Route::post('cancel-order/{id}', 'OrderController@cancelOrder');
 	});
 });
-
-
-    
-   
