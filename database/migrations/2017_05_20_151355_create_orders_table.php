@@ -16,7 +16,6 @@ class CreateOrdersTable extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('customer_id')->unsigned()->nullable();
-            $table->integer('product_cat_id')->unsigned()->nullable();
             $table->integer('product_id')->unsigned()->nullable();
             $table->integer('quantity')->unsigned();
             $table->integer('state_id')->unsigned()->nullable();
@@ -39,7 +38,6 @@ class CreateOrdersTable extends Migration
             $table->timestamps();
 
             $table->foreign('customer_id')->references('id')->on('customers')->onDelete('set null');
-            $table->foreign('product_cat_id')->references('id')->on('product_categories')->onDelete('set null');
             $table->foreign('product_id')->references('id')->on('products')->onDelete('set null');
             $table->foreign('state_id')->references('id')->on('states')->onDelete('set null');
             $table->foreign('comms_rep_id')->references('id')->on('comms_execs')->onDelete('set null');

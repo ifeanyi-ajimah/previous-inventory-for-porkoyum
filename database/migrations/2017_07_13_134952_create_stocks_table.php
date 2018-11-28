@@ -17,8 +17,8 @@ class CreateStocksTable extends Migration
             $table->increments('id');
             $table->boolean('received')->default(false);
             $table->integer('state_id')->unsigned();
-             $table->integer('damaged')->unsigned();
-             $table->integer('product_id')->unsigned();
+            $table->integer('damaged')->unsigned();
+            $table->integer('product_id')->unsigned();
             $table->integer('quantity');
             $table->integer('batch')->unsigned()->default(0);
             $table->enum('type',['restock','damaged']);

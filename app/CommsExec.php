@@ -3,7 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use App\ProductCategory;
+
 
 class CommsExec extends Model
 {
@@ -11,13 +11,8 @@ class CommsExec extends Model
     protected $fillable = [
         'fullname',
         'display_name',
-        'productcategories_id'
     ];
 
-    public function productcat()
-    {
-        return $this->belongsTo('App\ProductCategory', 'productcategories_id');
-    }
 
     public function orders()
     {

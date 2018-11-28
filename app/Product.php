@@ -7,11 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Product extends Model
 {
 
-    public function product_cat()
-    {
-        return $this->belongsTo('App\ProductCategory', 'product_category_id');
-    }
-
     public function orders()
     {
         return $this->hasMany('App\Order');

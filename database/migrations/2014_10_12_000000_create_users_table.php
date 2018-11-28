@@ -21,6 +21,17 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->timestamps();
         });
+
+        // Insert some stuff
+            DB::table('users')->insert(
+                array(
+                    'id' => 1,
+                    'name' => 'admin',
+                    'email' => 'info@porkoyum.com',
+                    'password' => '$2y$10$4ht5c.U1sXYmoU1BfDWcoOkEBwn1lRY8dylcP7nRc1c67ZiHrobgq',
+                    'remember_token' => str_random(10),
+                )
+            );
     }
 
     /**

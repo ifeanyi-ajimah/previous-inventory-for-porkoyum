@@ -19,6 +19,47 @@ class EntrustSetupTables extends Migration
             $table->string('description')->nullable();
             $table->timestamps();
         });
+            // Insert some stuff
+            DB::table('roles')->insert(
+                array(
+                    'name' => 'admin',
+                    'display_name' => 'Administrator',
+                    'description' => 'Should perform all tasks on the platform',
+                )
+            );
+
+            DB::table('roles')->insert(
+                array(
+                    'name' => 'comms',
+                    'display_name' => 'Data Comms',
+                    'description' => 'Should take orders',
+                )
+            );
+
+             DB::table('roles')->insert(
+                array(
+                    'name' => 'logistics',
+                    'display_name' => 'Delivery Person',
+                    'description' => 'People that handle product delivery',
+                )
+            );
+
+              DB::table('roles')->insert(
+                array(
+                    'name' => 'confirmers',
+                    'display_name' => 'Order Confirmation',
+                    'description' => 'Edit/Confirms Orders',
+                )
+            );
+
+               DB::table('roles')->insert(
+                array(
+                    'name' => 'inventory',
+                    'display_name' => 'Inventory',
+                    'description' => 'Responsible for managing state inventory',
+                )
+            );
+
 
         // Create table for associating roles to users (Many-to-Many)
         Schema::create('role_user', function (Blueprint $table) {
@@ -32,6 +73,14 @@ class EntrustSetupTables extends Migration
 
             $table->primary(['user_id', 'role_id']);
         });
+            // Insert some stuff
+            DB::table('role_user')->insert(
+                array(
+                    'user_id' => 1,
+                    'role_id' => 1,
+                    
+                )
+            );
 
         // Create table for storing permissions
         Schema::create('permissions', function (Blueprint $table) {
@@ -41,6 +90,58 @@ class EntrustSetupTables extends Migration
             $table->string('description')->nullable();
             $table->timestamps();
         });
+
+            // Insert some stuff
+            DB::table('permissions')->insert(
+                array(
+                    'id' => 1,
+                    'name' => "create-order",
+                    'display_name' => "Create Order",
+                    'description' => "Creates orders for new and existing customers",
+                    
+                )
+            );
+
+             DB::table('permissions')->insert(
+                array(
+                    'id' => 2,
+                    'name' => "edit-order",
+                    'display_name' => "Edit Order",
+                    'description' => "Edit Orders",
+                    
+                )
+            );
+
+              DB::table('permissions')->insert(
+                array(
+                    'id' => 3,
+                    'name' => "create-user",
+                    'display_name' => "Create User",
+                    'description' => "Create New User",
+                    
+                )
+            );
+
+               DB::table('permissions')->insert(
+                array(
+                    'id' => 4,
+                    'name' => "delete-user",
+                    'display_name' => "Delete User",
+                    'description' => "Deletes Users",
+                    
+                )
+            );
+
+
+               DB::table('permissions')->insert(
+                array(
+                    'id' => 5,
+                    'name' => "confirm-order",
+                    'display_name' => "Confirms Order",
+                    'description' => "Ability to confirm orders",
+                    
+                )
+            );
 
         // Create table for associating permissions to roles (Many-to-Many)
         Schema::create('permission_role', function (Blueprint $table) {
@@ -54,6 +155,16 @@ class EntrustSetupTables extends Migration
 
             $table->primary(['permission_id', 'role_id']);
         });
+
+
+            // Insert some stuff
+            DB::table('permission_role')->insert(
+                array(
+                    'permission_id' => 1,
+                    'role_id' => 1,
+                    
+                )
+            );
     }
 
     /**

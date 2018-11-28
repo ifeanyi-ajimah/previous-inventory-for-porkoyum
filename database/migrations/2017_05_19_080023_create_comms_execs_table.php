@@ -17,13 +17,11 @@ class CreateCommsExecsTable extends Migration
             $table->increments('id');
             $table->string('fullname')->nullable();
             $table->string('display_name')->nullable();
-            $table->integer('productcategories_id')->unsigned();
             $table->integer('user_id')->unsigned();
         
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->foreign('productcategories_id')->references('id')->on('product_categories')->onDelete('cascade');
         });
     }
 

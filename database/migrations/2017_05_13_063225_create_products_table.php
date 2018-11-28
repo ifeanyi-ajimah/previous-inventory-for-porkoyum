@@ -15,13 +15,27 @@ class CreateProductsTable extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('product_category_id')->unsigned();
             $table->string('product_name');
             $table->integer('price');
             $table->timestamps();
 
-            $table->foreign('product_category_id')->references('id')->on('product_categories')->onDelete('cascade');
+            
         });
+
+        // Insert some product
+            DB::table('products')->insert(
+                array(
+                    'product_name' => 'Porkoyum Sausage',
+                    'price' => '1500',
+                )
+            );
+
+            DB::table('products')->insert(
+                array(
+                    'product_name' => 'Porkoyum Bacon',
+                    'price' => '1800',
+                )
+            );
     }
 
     /**

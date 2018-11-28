@@ -3,7 +3,7 @@
 use App\User;
 use App\Customer;
 use App\CommsExec;
-use App\ProductCategory;
+//use App\ProductCategory;
 use App\Product;
 use App\State;
 use App\DeliveryPerson;
@@ -57,18 +57,18 @@ $factory->define(State::class, function (Faker\Generator $faker) {
     ];
 });
 
-$factory->define(ProductCategory::class, function (Faker\Generator $faker) {
+/*$factory->define(ProductCategory::class, function (Faker\Generator $faker) {
     return [
         'category_name' => $faker->randomElement(['SLIMTEA', 'HAIRNOWNOW', 'MOLATOO', 'HAIRNYMPH', 'MECRAN', 'FLATTUMMY']),
     ];
-});
+});*/
 
 $factory->define(Product::class, function (Faker\Generator $faker) {
+/*
+    $product_cat = ProductCategory::all()->random();*/
 
-    $product_cat = ProductCategory::all()->random();
-
-    return [
-        'product_category_id' => $product_cat->id,
+    return [/*
+        'product_category_id' => $product_cat->id,*/
         'product_name' => $faker->word,
         'price' => $faker->numberBetween(5000, 20000),
     ];
