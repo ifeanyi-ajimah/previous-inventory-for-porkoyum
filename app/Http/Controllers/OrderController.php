@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\CommsExec;
 use App\Customer;
 use App\DeliveryPerson;
-use App\ProductCategory;
 use Illuminate\Http\Request;
 use App\Order;
 use App\State;
@@ -44,7 +43,7 @@ class OrderController extends Controller
             $week           = $state->orders()->whereBetween('created_at', [Carbon::now()->subDays(9),Carbon::today()->subDays(2)])->get();
             $month          = $state->orders()->whereBetween('created_at', [Carbon::today()->subMonth(), Carbon::now()])->get();
             $year           = $state->orders()->whereBetween('created_at', [Carbon::today()->subYear(),Carbon::now()])->get();
-            
+
             $data->orders['today'] = $today->map(function($order){
                 $temp           = new Order;
                 $temp->id       = $order->id;
@@ -130,14 +129,14 @@ class OrderController extends Controller
         }
 
         $customers = Customer::all();
-        $product_cats = ProductCategory::all();
+        $products = Product::all();
         $states = State::all();
         $commsExecs = CommsExec::all();
         $deliveryPersons = DeliveryPerson::all();
 
         return view('orders.create')
             ->with('customers', $customers)
-            ->with('product_cats', $product_cats)
+            ->with('products', $products)
             ->with('states', $states)
             ->with('commsexecs', $commsExecs)
             ->with('deliveryPersons', $deliveryPersons);
@@ -164,14 +163,14 @@ class OrderController extends Controller
             $request->customer_id   = $this->_addUser($request);
         }
         $order->customer_id             = $request->customer_id;
-        $order->product_cat_id          = $request->product_cat_id;
+        //$order->product_cat_id          = //$request->product_cat_id;
         $order->product_id              = $request->product_id;
         $order->quantity                = $request->quantity;
         $order->value                   = $request->value;
         $order->state_id                = $request->state_id;
         $order->verified                = true; //This should be removed when how others are verified is confirmed
         $order->comms_rep_id            = CommsExec::where('user_id',Auth::id())->pluck('id')->first();
-        $order->urgent                  = $request->urgent;
+        //$order->urgent                  = //$request->urgent;
         if(isset($request->expected_delivery_date)){
             $order->expected_delivery_date  = Carbon::createFromFormat('Y-m-d', $request->expected_delivery_date)->toDateTimeString();
         }
@@ -250,7 +249,7 @@ class OrderController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    
+
     public function update(Request $request, Order $order)
     {
         // dd($request->all());
@@ -282,7 +281,7 @@ class OrderController extends Controller
     {
         $product = $order->product->product_name;
         $customer = $order->customer->name." with phone: ".$order->customer->phone_no;
-        
+
         if($order->delete())
         {
             event(new \App\Events\DeleteOrder($product, $customer));
@@ -402,13 +401,13 @@ class OrderController extends Controller
         $order->value               = $request->value;
         $order->state_id            = State::where('name','Accra')->pluck('id')->first();
         $order->delivery_address    = $request->delivery_address;
-        
+
         $order->created_by          = 1;
 
         if($order->save())
         {
             return $order;
-        }        
+        }
         return response()->json(['message' => 'Order could not be created'],400);
     }
 
@@ -419,7 +418,7 @@ class OrderController extends Controller
         $orders         = Order::where('comms_rep_id',null)->where('product_id',$product->id)->with('customer')
                             ->orderBy('created_at', 'ASC')
                             ->simplePaginate(20);
-        
+
         return view('orders.autodoctor',[
             'orders'    => $orders,
             'heading'   => 'All Auto Doctor Orders'
@@ -467,7 +466,7 @@ class OrderController extends Controller
 
     /****************************** For APIs ******************************/
 
-    /**       
+    /**
      * Add Delivery Person.
      *
      * @param  Illuminate\Http\Request $request
@@ -484,10 +483,10 @@ class OrderController extends Controller
             $order->deliveryperson()->associate(DeliveryPerson::find($request->delivery_person));
             $order->save();
             Session::flash('success', 'Delivery agent has been added');
-            
+
             return back();
         }
-        
+
         Session::flash('warning', 'Insufficient items in stock for dispatch');
         return back();
     }
@@ -510,10 +509,10 @@ class OrderController extends Controller
     public function statePendingOrders()
     {
         $products = Product::all(['id']);
-        
+
         $orders = array_map(function($prod){
- 
-            $accra = State::where('name','Accra')->pluck('id')->first(); 
+
+            $accra = State::where('name','Accra')->pluck('id')->first();
             $product = Product::find($prod['id']);
             $sortedState = [];
             $states = State::where('name','!=','Accra')->get();
@@ -542,10 +541,10 @@ class OrderController extends Controller
     public function stateDeliveredOrders()
     {
         $products = Product::all(['id']);
-        
+
         $orders = array_map(function($prod){
 
-            $accra = State::where('name','Accra')->pluck('id')->first();  
+            $accra = State::where('name','Accra')->pluck('id')->first();
             $product = Product::find($prod['id']);
             $sortedState = [];
             $states = State::where('id','!=',$accra)->get();
@@ -574,7 +573,7 @@ class OrderController extends Controller
     public function allDeliveries()
     {
         $orders = Order::where('delivered',true)->with('deliveryperson','state')->orderBy('confirmed', 'DESC')->get();
-        
+
         return view('deliverypersons.deliveries',[
             'orders' => $orders
         ]);

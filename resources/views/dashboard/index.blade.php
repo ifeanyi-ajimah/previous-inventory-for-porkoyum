@@ -123,16 +123,16 @@
 
                         @foreach($todayOrders as $order)
                             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                <div class="panel panel-{{ $dc[$order->product_cat_id] }}">
+                                <div class="panel panel-{{ $dc[$order->product_id] }}">
                                     <div class="panel-heading">
                                         <div class="media">
                                             <div class="media-left">
                                                 <a href="#">
-                                                    <img class="media-object" src="img/{{ $img[$order->product_cat_id] }}" alt="...">
+                                                    <img class="media-object" src="img/{{ $img[$order->product_id] }}" alt="...">
                                                 </a>
                                             </div>
                                             <div class="media-body media-right">
-                                                <h2 class="media-heading">{{ $pcs[$order->product_cat_id] }}</h2></strong>
+                                                <h2 class="media-heading">{{ $pcs[$order->product_id] }}</h2></strong>
                                                 <h4>&#8373; {{ number_format($order->total_sales) }} PV</h4>
                                                 <h4>{{ $order->orders_count }} Orders</h4>
                                                 {{--<h4>{{ $order->confirmed_orders }} Confirmed Orders</h4>--}}
@@ -142,7 +142,7 @@
                                         </div>
                                     </div>
                                     <div class="panel-footer">
-                                        <a href="/products/{{ $pcs[$order->product_cat_id] }}/orders?date=today">View Details</a>
+                                        <a href="/products/{{ $pcs[$order->product_id] }}/orders?date=today">View Details</a>
                                         <span class="glyphicon glyphicon-arrow-right pull-right"></span>
                                     </div>
                                 </div>
@@ -208,16 +208,16 @@
 
                         @foreach ($yesterdayOrders as $order)
                             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                <div class="panel panel-{{ $dc[$order->product_cat_id] }}">
+                                <div class="panel panel-{{ $dc[$order->product_id] }}">
                                     <div class="panel-heading">
                                         <div class="media">
                                             <div class="media-left">
                                                 <a href="#">
-                                                    <img class="media-object" src="img/{{ $img[$order->product_cat_id] }}" alt="...">
+                                                    <img class="media-object" src="img/{{ $img[$order->product_id] }}" alt="...">
                                                 </a>
                                             </div>
                                             <div class="media-body media-right">
-                                                <h2 class="media-heading">{{ $pcs[$order->product_cat_id] }}</h2></strong>
+                                                <h2 class="media-heading">{{ $pcs[$order->product_id] }}</h2></strong>
                                                 <h4>&#8373; {{ number_format($order->total_sales) }} PV</h4>
                                                 <h4>{{ $order->orders_count }} Orders</h4>
                                                 {{--<h4>{{ $order->confirmed_orders }} Confirmed Orders</h4>--}}
@@ -227,7 +227,7 @@
                                         </div>
                                     </div>
                                     <div class="panel-footer">
-                                        <a href="/products/{{ $pcs[$order->product_cat_id] }}/orders?date=yesterday">View Details</a>
+                                        <a href="/products/{{ $pcs[$order->product_id] }}/orders?date=yesterday">View Details</a>
                                         <span class="glyphicon glyphicon-arrow-right pull-right"></span>
                                     </div>
                                 </div>
@@ -293,16 +293,16 @@
 
                         @foreach($weekOrders as $order)
                             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                <div class="panel panel-{{ $dc[$order->product_cat_id] }}">
+                                <div class="panel panel-{{ $dc[$order->product_id] }}">
                                     <div class="panel-heading">
                                         <div class="media">
                                             <div class="media-left">
                                                 <a href="#">
-                                                    <img class="media-object" src="img/{{ $img[$order->product_cat_id] }}" alt="...">
+                                                    <img class="media-object" src="img/{{ $img[$order->product_id] }}" alt="...">
                                                 </a>
                                             </div>
                                             <div class="media-body media-right">
-                                                <h2 class="media-heading">{{ $pcs[$order->product_cat_id] }}</h2></strong>
+                                                <h2 class="media-heading">{{ $pcs[$order->product_id] }}</h2></strong>
                                                 <h4>&#8373; {{ number_format($order->total_sales) }} PV</h4>
                                                 <h4>{{ $order->orders_count }} Orders</h4>
                                                 {{--<h4>{{ $order->confirmed_orders }} Confirmed Orders</h4>--}}
@@ -312,7 +312,7 @@
                                         </div>
                                     </div>
                                     <div class="panel-footer">
-                                        <a href="/products/{{ $pcs[$order->product_cat_id] }}/orders">View Details</a>
+                                        <a href="/products/{{ $pcs[$order->product_id] }}/orders">View Details</a>
                                         <span class="glyphicon glyphicon-arrow-right pull-right"></span>
                                     </div>
                                 </div>
@@ -377,16 +377,16 @@
 
                         @foreach($monthOrders as $order)
                             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                <div class="panel panel-{{ $dc[$order->product_cat_id] }}">
+                                <div class="panel panel-{{ $dc[$order->product_id] }}">
                                     <div class="panel-heading">
                                         <div class="media">
                                             <div class="media-left">
                                                 <a href="#">
-                                                    <img class="media-object" src="img/{{ $img[$order->product_cat_id] }}" alt="...">
+                                                    <img class="media-object" src="img/{{ $img[$order->product_id] }}" alt="...">
                                                 </a>
                                             </div>
                                             <div class="media-body media-right">
-                                                <h2 class="media-heading">{{ $pcs[$order->product_cat_id] }}</h2></strong>
+                                                <h2 class="media-heading">{{ $pcs[$order->product_id] }}</h2></strong>
                                                 <h4>&#8373; {{ number_format($order->total_sales) }} PV</h4>
                                                 <h4>{{ $order->orders_count }} Orders</h4>
                                                 {{--<h4>{{ $order->confirmed_orders }} Confirmed Orders</h4>--}}
@@ -396,7 +396,7 @@
                                         </div>
                                     </div>
                                     <div class="panel-footer">
-                                        <a href="/products/{{ $pcs[$order->product_cat_id] }}/orders">View Details</a>
+                                        <a href="/products/{{ $pcs[$order->product_id] }}/orders">View Details</a>
                                         <span class="glyphicon glyphicon-arrow-right pull-right"></span>
                                     </div>
                                 </div>
@@ -462,16 +462,16 @@
 
                         @foreach($yearOrders as $order)
                             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                <div class="panel panel-{{ $dc[$order->product_cat_id] }}">
+                                <div class="panel panel-{{ $dc[$order->product_id] }}">
                                     <div class="panel-heading">
                                         <div class="media">
                                             <div class="media-left">
                                                 <a href="#">
-                                                    <img class="media-object" src="img/{{ $img[$order->product_cat_id] }}" alt="...">
+                                                    <img class="media-object" src="img/{{ $img[$order->product_id] }}" alt="...">
                                                 </a>
                                             </div>
                                             <div class="media-body media-right">
-                                                <h2 class="media-heading">{{ $pcs[$order->product_cat_id] }}</h2></strong>
+                                                <h2 class="media-heading">{{ $pcs[$order->product_id] }}</h2></strong>
                                                 <h4>&#8373; {{ number_format($order->total_sales) }} PV</h4>
                                                 <h4>{{ $order->orders_count }} Orders</h4>
                                                 {{--<h4>{{ $order->confirmed_orders }} Confirmed Orders</h4>--}}
@@ -481,7 +481,7 @@
                                         </div>
                                     </div>
                                     <div class="panel-footer">
-                                        <a href="/products/{{ $pcs[$order->product_cat_id] }}/orders">View Details</a>
+                                        <a href="/products/{{ $pcs[$order->product_id] }}/orders">View Details</a>
                                         <span class="glyphicon glyphicon-arrow-right pull-right"></span>
                                     </div>
                                 </div>
@@ -604,7 +604,7 @@
             });
         });
 
-        
+
     </script>
 
 @endsection

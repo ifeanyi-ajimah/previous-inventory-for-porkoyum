@@ -182,33 +182,25 @@
                         </select>
                     </div>
 
-                    <div class="form-group">
-                        {{ Form::label('product_cat_id', 'Product Category') }}
-                        <select name="product_cat_id" id="product_cat" class="ct" required>
-                            <option>Select Product Category</option>
-                            @foreach($product_cats as $product_cat)
-                                <option value="{{ $product_cat->id }}">{{ $product_cat->category_name }}</option>
-                            @endforeach
-                        </select>       </div>
-
-                    <div class="form-group">
+                    <div class="form-group" id="productDiv">
                         {{ Form::label('product_id', 'Product') }}
                         <select name="product_id" id="product" class="ct" required>
                             <option>Choose a Product</option>
+                            @foreach($products as $product)
+                                <option value="{{ $product->id }}">{{ $product->product_name }}</option>
+                            @endforeach
                         </select>
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group" id="quantityDiv">
                         {{ Form::label('product_quantity', 'Quantity') }}
                         {{ Form::number('quantity', null, ['class' => 'inputtext form-control']) }}
                     </div>
-
-
                 </div>
 
                 <div class="col-md-6">
 
-                    <div class="form-group">
+                    <div class="form-group" id="valueDiv">
                         {{ Form::label('product_value', 'Value') }}
                         {{ Form::tel('value', null, ['class' => 'inputtext form-control']) }}
                     </div>
@@ -224,19 +216,6 @@
 
                     {{--{{ Form::hidden('') }}--}}
 
-                    <div class="form-group">
-                        {{ Form::label('urgency_status', 'URGENCY') }}
-                        <select name="urgent" class="ct" required>
-                            <option value="1">URGENT</option>
-                            <option value="0">NOT URGENT</option>
-                        </select>
-                    </div>
-                    <div id="datepicker">
-                        {{ Form::label('expected_delivery_date', 'Expected Delivery Date') }}
-                        <div class="input-group date">
-                            <input type="text" name="expected_delivery_date" class="form-control selector" data-date-autoclose="true">
-                        </div>
-                    </div>
                 </div>
 
                 <div class="col-md-12 bottom_spacing">
@@ -302,8 +281,11 @@
     {!! Html::script('https://cdn.jsdelivr.net/npm/flatpickr') !!}
     {{--<!--{!! Html::script('js/microplugin.js') !!} -->--}}
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    
+
     <script>
+        valueInput = $("#valueDiv input");
+        quantityInput = $("#quantityDiv input");
+        productInput = $('#productDiv select');
         //initialize materialize select
         $(document).ready(function() {
             $('.ct').material_select();
@@ -312,7 +294,26 @@
             $('#customer_phone').hide();
 
             $(".selector").flatpickr();
+            valueInput.prop('readonly', 'readonly');
         });
+
+        productInput.on('change', function () {
+            changePrice();
+        })
+
+        quantityInput.on('change', function () {
+            changePrice();
+        })
+
+        changePrice = function() {
+            if (productInput.val()==1 && quantityInput.val()) {
+                var sausagePrice = parseInt({{$products[0]->price}}) * parseInt(quantityInput.val());
+                valueInput.val(sausagePrice);
+            } else if (productInput.val()==2){
+                var baconPrice = parseInt({{$products[1]->price}}) * parseInt(quantityInput.val());
+                valueInput.val(baconPrice);
+            }
+        }
 
         $('.datepicker').on('changeDate', function(ev){
             $(this).datepicker('hide');
@@ -386,7 +387,7 @@
                 $('#customer_name').hide();
                 $('#customer_phone').hide();
                 $.get("/api/customers/"+$(this).val(), function(data) {
-                    $('#delivery_address').val(data.address)  
+                    $('#delivery_address').val(data.address)
                 });
             });
         });

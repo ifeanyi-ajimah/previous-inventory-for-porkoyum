@@ -28,7 +28,7 @@ class StockController extends Controller
 
 	public function accra()
 	{
-		$state = State::where('name','Accra')->first();
+		$state = State::where('name','lagos')->first();
 		$region = $state->region->id;
 		return view('accra', [
 			'products' 	=> Product::all(),
@@ -70,7 +70,7 @@ class StockController extends Controller
 			'logistics' => DeliveryPerson::where('state_id','!=',$accra)->get()
 		]);
 	}
-	
+
     public function store(Request $request)
     {
     	if(self::storeShadow($request)){
@@ -87,7 +87,7 @@ class StockController extends Controller
     	$stock->quantity = $request->intact;
     	$stock->damaged = $request->damaged;
 	    $stock->state_id = $request->location;
-    	
+
     	$regionalShipment = $stock->product->regionalInventory($request->region)->latest()->first();
     	$oldStock = $regionalShipment->available;
 		$regionalShipment->available = $regionalShipment->available - ($request->intact + $request->damaged);
@@ -96,7 +96,7 @@ class StockController extends Controller
 			return false;
 		}
 		$regionalShipment->save();
-		
+
 	    $stock->save();
 	    return $stock;
     }
@@ -108,7 +108,7 @@ class StockController extends Controller
     	$stockChange = $inventory->quantity - $request->quantity;
     	$inventory->quantity = $request->quantity;
 	    $inventory->save();
-	    
+
 	    $stock = new Stock;
     	$stock->product_id = $request->product;
     	$stock->quantity = $stockChange;
@@ -120,7 +120,7 @@ class StockController extends Controller
     }
 
     public static function shipment()
-    {	
+    {
     	$user = DeliveryPerson::where('user_id',Auth::id())->first();
     	$shipments = Stock::where('state_id',$user->state_id)->where('received',false)->get();
     	return view('deliverypersons.shipment',[
@@ -141,7 +141,7 @@ class StockController extends Controller
     		InventoryState::create([
     			'state_id' => $stock->state_id,
     			'product_id' => $stock->product_id,
-    			'quantity' => $stock->quantity 
+    			'quantity' => $stock->quantity
     		]);
     	}
     	$stock->received = true;

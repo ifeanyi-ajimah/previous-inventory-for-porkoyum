@@ -9,7 +9,7 @@ use Carbon\Carbon;
 use App\Order;
 use App\Product;
 use App\State;
-use App\ProductCategory;
+//use App\ProductCategory;
 use Illuminate\Support\Facades\DB;
 
 class DashboardController extends Controller
@@ -53,15 +53,15 @@ class DashboardController extends Controller
             ->take(5)
             ->get();
 
-        $productcats = ProductCategory::all();
+        //$products = Product::all();
         $pcs = [];
         $img = [];
         $dc = [];
-        foreach ($productcats as $productcat) {
-            $pcs[$productcat->id] = $productcat->category_name;
-            $img[$productcat->id] = $productcat->image;
-            $dc[$productcat->id] = $productcat->dashboard_color;
-        }
+        // foreach ($products as $aProduct) {
+        //     $pcs[$aProduct->id] = $aProduct->category_name;
+        //     $img[$aProduct->id] = $aProduct->image;
+        //     $dc[$aProduct->id] = $aProduct->dashboard_color;
+        // }
 
         $usernames = User::all();
         $users = [];
@@ -90,7 +90,7 @@ class DashboardController extends Controller
         $commsYear = $commsYear->reject(function($person){
             return is_null($person->id);
         });
-        
+
         $usersOrderstToday = DB::table('orders')
             ->select('created_by', DB::raw('SUM(value) as total_sales, COUNT(id) as orders_count'))
             ->groupBy('created_by')
@@ -130,46 +130,46 @@ class DashboardController extends Controller
             ->get();
 
     	$todayOrders = DB::table('orders')
-            ->select('product_cat_id', DB::raw('SUM(value) as total_sales, COUNT(id) as orders_count'))
-            ->groupBy('product_cat_id')
+            ->select('product_id', DB::raw('SUM(value) as total_sales, COUNT(id) as orders_count'))
+            ->groupBy('product_id')
             ->whereDate('created_at', Carbon::today())
             ->get();
 
         $confirmedOrdersToday = \App\Order::confirmed(Carbon::today());
 
         $yesterdayOrders = DB::table('orders')
-            ->select('product_cat_id', DB::raw('SUM(value) as total_sales, COUNT(id) as orders_count'))
-            ->groupBy('product_cat_id')
+            ->select('product_id', DB::raw('SUM(value) as total_sales, COUNT(id) as orders_count'))
+            ->groupBy('product_id')
             ->whereDate('created_at', Carbon::yesterday())
             ->get();
 
         $weekOrders = DB::table('orders')
-            ->select('product_cat_id', DB::raw('SUM(value) as total_sales, COUNT(id) as orders_count'))
-            ->groupBy('product_cat_id')
+            ->select('product_id', DB::raw('SUM(value) as total_sales, COUNT(id) as orders_count'))
+            ->groupBy('product_id')
             ->whereBetween(DB::raw('date(created_at)'), [$fromDate, $tillDate] )
             ->get();
 
         $monthOrders = DB::table('orders')
-            ->select('product_cat_id', DB::raw('SUM(value) as total_sales, COUNT(id) as orders_count'))
-            ->groupBy('product_cat_id')
+            ->select('product_id', DB::raw('SUM(value) as total_sales, COUNT(id) as orders_count'))
+            ->groupBy('product_id')
             ->whereDate('created_at', '>=', Carbon::now()->subMonth())
             ->get();
 
         $yearOrders = DB::table('orders')
-            ->select('product_cat_id', DB::raw('SUM(value) as total_sales, COUNT(id) as orders_count'))
-            ->groupBy('product_cat_id')
+            ->select('product_id', DB::raw('SUM(value) as total_sales, COUNT(id) as orders_count'))
+            ->groupBy('product_id')
             ->whereDate('created_at', '>=', Carbon::now()->subYear())
             ->get();
 
         $monthOrders = $monthOrders->filter(function($order){
-            if($order->product_cat_id != null)
+            if($order->product_id != null)
             {
                 return $order;
             }
         })->values();
 
         $yearOrders = $yearOrders->filter(function($order){
-            if($order->product_cat_id != null)
+            if($order->product_id != null)
             {
                 return $order;
             }
@@ -222,17 +222,17 @@ class DashboardController extends Controller
 
     public function dashboardByState(State $state)
     {
-        $productcats = ProductCategory::all();
+        //$products = Product::all();
         $pcs = [];
-        foreach ($productcats as $productcat) {
-            $pcs[$productcat->id] = $productcat->category_name;
-        }
+        // foreach ($products as $aProduct) {
+        //     $pcs[$aProduct->id] = $aProduct->category_name;
+        // }
 
         // $user_orders = User::has('orders');
 
         $orders = DB::table('orders')
-            ->select('product_cat_id', DB::raw('SUM(value) as total_sales, COUNT(id) as orders_count'))
-            ->groupBy('product_cat_id')
+            ->select('product_id', DB::raw('SUM(value) as total_sales, COUNT(id) as orders_count'))
+            ->groupBy('product_id')
             // ->where('state_id', '=', $state_id)
             ->where('state_id', $state)
             ->whereDate('created_at', '2017-06-09')
