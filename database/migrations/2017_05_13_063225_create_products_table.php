@@ -27,6 +27,8 @@ class CreateProductsTable extends Migration
                 array(
                     'product_name' => 'Porkoyum Sausage',
                     'price' => '1500',
+                    'created_at' => date_create('now')->format('Y-m-d H:i:s'),
+                    'updated_at' => date_create('now')->format('Y-m-d H:i:s'),
                 )
             );
 
@@ -34,6 +36,8 @@ class CreateProductsTable extends Migration
                 array(
                     'product_name' => 'Porkoyum Bacon',
                     'price' => '1800',
+                    'created_at' => date_create('now')->format('Y-m-d H:i:s'),
+                    'updated_at' => date_create('now')->format('Y-m-d H:i:s'),
                 )
             );
     }

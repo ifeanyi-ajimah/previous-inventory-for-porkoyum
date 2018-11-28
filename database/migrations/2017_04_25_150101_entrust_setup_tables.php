@@ -25,6 +25,9 @@ class EntrustSetupTables extends Migration
                     'name' => 'admin',
                     'display_name' => 'Administrator',
                     'description' => 'Should perform all tasks on the platform',
+
+                    'created_at' => date_create('now')->format('Y-m-d H:i:s'),
+                    'updated_at' => date_create('now')->format('Y-m-d H:i:s'),
                 )
             );
 
@@ -33,6 +36,9 @@ class EntrustSetupTables extends Migration
                     'name' => 'comms',
                     'display_name' => 'Data Comms',
                     'description' => 'Should take orders',
+
+                    'created_at' => date_create('now')->format('Y-m-d H:i:s'),
+                    'updated_at' => date_create('now')->format('Y-m-d H:i:s'),
                 )
             );
 
@@ -41,6 +47,9 @@ class EntrustSetupTables extends Migration
                     'name' => 'logistics',
                     'display_name' => 'Delivery Person',
                     'description' => 'People that handle product delivery',
+
+                    'created_at' => date_create('now')->format('Y-m-d H:i:s'),
+                    'updated_at' => date_create('now')->format('Y-m-d H:i:s'),
                 )
             );
 
@@ -49,6 +58,9 @@ class EntrustSetupTables extends Migration
                     'name' => 'confirmers',
                     'display_name' => 'Order Confirmation',
                     'description' => 'Edit/Confirms Orders',
+
+                    'created_at' => date_create('now')->format('Y-m-d H:i:s'),
+                    'updated_at' => date_create('now')->format('Y-m-d H:i:s'),
                 )
             );
 
@@ -57,6 +69,9 @@ class EntrustSetupTables extends Migration
                     'name' => 'inventory',
                     'display_name' => 'Inventory',
                     'description' => 'Responsible for managing state inventory',
+
+                    'created_at' => date_create('now')->format('Y-m-d H:i:s'),
+                    'updated_at' => date_create('now')->format('Y-m-d H:i:s'),
                 )
             );
 
@@ -78,7 +93,7 @@ class EntrustSetupTables extends Migration
                 array(
                     'user_id' => 1,
                     'role_id' => 1,
-                    
+
                 )
             );
 
@@ -98,6 +113,9 @@ class EntrustSetupTables extends Migration
                     'name' => "create-order",
                     'display_name' => "Create Order",
                     'description' => "Creates orders for new and existing customers",
+
+                    'created_at' => date_create('now')->format('Y-m-d H:i:s'),
+                    'updated_at' => date_create('now')->format('Y-m-d H:i:s'),
                     
                 )
             );
@@ -108,6 +126,9 @@ class EntrustSetupTables extends Migration
                     'name' => "edit-order",
                     'display_name' => "Edit Order",
                     'description' => "Edit Orders",
+
+                    'created_at' => date_create('now')->format('Y-m-d H:i:s'),
+                    'updated_at' => date_create('now')->format('Y-m-d H:i:s'),
                     
                 )
             );
@@ -118,6 +139,9 @@ class EntrustSetupTables extends Migration
                     'name' => "create-user",
                     'display_name' => "Create User",
                     'description' => "Create New User",
+
+                    'created_at' => date_create('now')->format('Y-m-d H:i:s'),
+                    'updated_at' => date_create('now')->format('Y-m-d H:i:s'),
                     
                 )
             );
@@ -128,6 +152,9 @@ class EntrustSetupTables extends Migration
                     'name' => "delete-user",
                     'display_name' => "Delete User",
                     'description' => "Deletes Users",
+
+                    'created_at' => date_create('now')->format('Y-m-d H:i:s'),
+                    'updated_at' => date_create('now')->format('Y-m-d H:i:s'),
                     
                 )
             );
@@ -139,6 +166,9 @@ class EntrustSetupTables extends Migration
                     'name' => "confirm-order",
                     'display_name' => "Confirms Order",
                     'description' => "Ability to confirm orders",
+
+                    'created_at' => date_create('now')->format('Y-m-d H:i:s'),
+                    'updated_at' => date_create('now')->format('Y-m-d H:i:s'),
                     
                 )
             );
@@ -162,7 +192,7 @@ class EntrustSetupTables extends Migration
                 array(
                     'permission_id' => 1,
                     'role_id' => 1,
-                    
+
                 )
             );
     }

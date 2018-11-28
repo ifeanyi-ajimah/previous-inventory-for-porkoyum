@@ -18,6 +18,25 @@ class CreateRegionsTable extends Migration
             $table->string('name');
             $table->timestamps();
         });
+
+        // Insert some stuff
+            DB::table('regions')->insert(
+                array(
+                    'id' => '1',
+                    'name' => 'lagos',
+                    'created_at' => date_create('now')->format('Y-m-d H:i:s'),
+                    'updated_at' => date_create('now')->format('Y-m-d H:i:s'),
+                )
+            );
+
+            DB::table('regions')->insert(
+                array(
+                    'id' => '2',
+                    'name' => 'others',
+                    'created_at' => date_create('now')->format('Y-m-d H:i:s'),
+                    'updated_at' => date_create('now')->format('Y-m-d H:i:s'),
+                )
+            );
     }
 
     /**
