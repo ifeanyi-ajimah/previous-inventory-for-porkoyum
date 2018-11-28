@@ -9,7 +9,7 @@ use Carbon\Carbon;
 use App\Order;
 use App\Product;
 use App\State;
-use App\ProductCategory;
+//use App\ProductCategory;
 use Illuminate\Support\Facades\DB;
 
 class DashboardController extends Controller
@@ -53,14 +53,14 @@ class DashboardController extends Controller
             ->take(5)
             ->get();
 
-        //$productcats = ProductCategory::all();
+        //$products = Product::all();
         $pcs = [];
         $img = [];
         $dc = [];
-        // foreach ($productcats as $productcat) {
-        //     $pcs[$productcat->id] = $productcat->category_name;
-        //     $img[$productcat->id] = $productcat->image;
-        //     $dc[$productcat->id] = $productcat->dashboard_color;
+        // foreach ($products as $aProduct) {
+        //     $pcs[$aProduct->id] = $aProduct->category_name;
+        //     $img[$aProduct->id] = $aProduct->image;
+        //     $dc[$aProduct->id] = $aProduct->dashboard_color;
         // }
 
         $usernames = User::all();
@@ -222,10 +222,10 @@ class DashboardController extends Controller
 
     public function dashboardByState(State $state)
     {
-        //$productcats = ProductCategory::all();
+        //$products = Product::all();
         $pcs = [];
-        // foreach ($productcats as $productcat) {
-        //     $pcs[$productcat->id] = $productcat->category_name;
+        // foreach ($products as $aProduct) {
+        //     $pcs[$aProduct->id] = $aProduct->category_name;
         // }
 
         // $user_orders = User::has('orders');
