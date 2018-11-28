@@ -191,6 +191,45 @@ class OrderController extends Controller
         return redirect('/dashboard');
     }
 
+    public function apiStore($request)
+    {
+        //$this->validate($request, Order::$rules, Order::$messages);
+
+        // $order = new Order();
+        //
+        // if(!is_numeric($request->customer_id))
+        // {
+        //     $request->customer_id   = $this->_addUser($request);
+        // }
+        // $order->customer_id             = $request->customer_id;
+        //$order->product_cat_id          = //$request->product_cat_id;
+        // $order->product_id              = $request->product_id;
+        // $order->quantity                = $request->quantity;
+        // $order->value                   = $request->value;
+        // $order->state_id                = $request->state_id;
+        // $order->verified                = true; //This should be removed when how others are verified is confirmed
+        //$order->comms_rep_id            = CommsExec::where('user_id',Auth::id())->pluck('id')->first();
+        //$order->urgent                  = //$request->urgent;
+        // if(isset($request->expected_delivery_date)){
+        //     $order->expected_delivery_date  = Carbon::createFromFormat('Y-m-d', $request->expected_delivery_date)->toDateTimeString();
+        // }
+        //
+        // if(Customer::find($request->customer_id)->address !== $request->delivery_address)
+        // {
+        //     $order->delivery_address    = $request->delivery_address;
+        // }
+        // $order->created_by              = Auth::id();
+        //
+        // if($order->save())
+        // {
+        //     event(new \App\Events\CreateOrder($order));
+        // }
+        //
+        // Session::flash('success', 'Order Successful');
+        //
+        // return redirect('/dashboard');
+    }
+
     /**
      * Display the specified resource.
      *
