@@ -163,14 +163,14 @@ class OrderController extends Controller
             $request->customer_id   = $this->_addUser($request);
         }
         $order->customer_id             = $request->customer_id;
-        $order->product_cat_id          = $request->product_cat_id;
+        //$order->product_cat_id          = //$request->product_cat_id;
         $order->product_id              = $request->product_id;
         $order->quantity                = $request->quantity;
         $order->value                   = $request->value;
         $order->state_id                = $request->state_id;
         $order->verified                = true; //This should be removed when how others are verified is confirmed
         $order->comms_rep_id            = CommsExec::where('user_id',Auth::id())->pluck('id')->first();
-        $order->urgent                  = $request->urgent;
+        //$order->urgent                  = //$request->urgent;
         if(isset($request->expected_delivery_date)){
             $order->expected_delivery_date  = Carbon::createFromFormat('Y-m-d', $request->expected_delivery_date)->toDateTimeString();
         }

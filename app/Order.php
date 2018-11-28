@@ -60,33 +60,32 @@ class Order extends Model
 
 
     protected $fillable = [
-        'customer_id', 
-        'product_id', 
-        'quantity', 
-        'state_id', 
+        'customer_id',
+        'product_id',
+        'quantity',
+        'state_id',
         'value',
-        'urgency_status', 
-        'comms_rep_id', 
+        //'urgency_status',
+        //'comms_rep_id',
         'confirmed_status',
-        'delivery_status', 
-        'delivery_person_id', 
+        'delivery_status',
+        //'delivery_person_id',
         'amount_paid',
         'date_paid',
-        'expected_delivery_date'
+        //'expected_delivery_date'
     ];
 
     public static $rules = [
-        'customer_id' => 'required', 'product_cat_id' => 'required',
+        'customer_id' => 'required',
         'product_id' => 'required', 'quantity' => 'required',
-        'state_id' => 'required', 'value' => 'required',
-        'urgent' => 'required'
+        'state_id' => 'required', 'value' => 'required'
         // 'comms_rep_id' => 'required'
     ];
 
     public static $edit_rules = [
-        'customer_id' => 'required', 
+        'customer_id' => 'required',
         'product_id' => 'required',
-        'quantity' => 'required', 
+        'quantity' => 'required',
         'state_id' => 'required',
         'value' => 'required'
     ];
