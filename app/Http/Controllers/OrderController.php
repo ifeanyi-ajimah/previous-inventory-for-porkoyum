@@ -7,6 +7,7 @@ use App\Customer;
 use App\DeliveryPerson;
 use Illuminate\Http\Request;
 use App\Order;
+use App\Pseudo;
 use App\State;
 use App\Product;
 use Illuminate\Support\Facades\Session;
@@ -191,8 +192,10 @@ class OrderController extends Controller
         return redirect('/dashboard');
     }
 
-    public function apiStore($request)
+    public function apiStore(Request $request)
     {
+        $pseudo = new Pseudo();
+        $pseudo->payload = json_encode($request);
         //$this->validate($request, Order::$rules, Order::$messages);
 
         // $order = new Order();
