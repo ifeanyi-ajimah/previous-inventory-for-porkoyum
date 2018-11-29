@@ -42,4 +42,4 @@ Route::post('orders/autodoctor', 'OrderController@autoDoctor');
 Route::post('orders/mark-as-delivered', 'OrderController@markAsDelivered');
 Route::post('orders/mark-as-pending', 'OrderController@markAsPending');
 
-Route::post('orders/create', 'OrderController@apiStore');
+Route::get('orders/create', 'OrderController@apiStore');
