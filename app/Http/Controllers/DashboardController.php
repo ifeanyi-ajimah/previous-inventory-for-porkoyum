@@ -53,15 +53,15 @@ class DashboardController extends Controller
             ->take(5)
             ->get();
 
-        //$products = Product::all();
+        $products = Product::all();
         $pcs = [];
         $img = [];
         $dc = [];
-        // foreach ($products as $aProduct) {
-        //     $pcs[$aProduct->id] = $aProduct->category_name;
-        //     $img[$aProduct->id] = $aProduct->image;
-        //     $dc[$aProduct->id] = $aProduct->dashboard_color;
-        // }
+        foreach ($products as $aProduct) {
+            $pcs[$aProduct->id] = $aProduct->product_name;
+            $img[$aProduct->id] = $aProduct->image;
+            $dc[$aProduct->id] = $aProduct->dashboard_color;
+        }
 
         $usernames = User::all();
         $users = [];
@@ -205,14 +205,14 @@ class DashboardController extends Controller
         if ($request->has('date')) {
             $chosenDate = $request->date;
         } else {
-            $chosenDate = Carbon::today();
+            $chosenDate = Carbon::now();
         }
 
         $orders = Order::whereDate('created_at', $chosenDate)->simplePaginate(15);
 
         return view('orders.index')
             ->with('orders', $orders)
-            ->with('heading', 'Orders on ' . date('F nS, Y', strtotime($chosenDate)));
+            ->with('heading', 'Orders on ' . date('F jS, Y', strtotime($chosenDate)));
     }
 
     /**
@@ -222,11 +222,11 @@ class DashboardController extends Controller
 
     public function dashboardByState(State $state)
     {
-        //$products = Product::all();
+        $products = Product::all();
         $pcs = [];
-        // foreach ($products as $aProduct) {
-        //     $pcs[$aProduct->id] = $aProduct->category_name;
-        // }
+        foreach ($products as $aProduct) {
+            $pcs[$aProduct->id] = $aProduct->product_name;
+        }
 
         // $user_orders = User::has('orders');
 
