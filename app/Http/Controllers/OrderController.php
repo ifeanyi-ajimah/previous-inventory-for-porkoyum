@@ -194,7 +194,7 @@ class OrderController extends Controller
 
     public function apiStore(Request $request)
     {
-        dd($request->all());
+        //dd($request->all());
         $pseudo = new Pseudo();
         $pseudo->payload = $request->all();
         $pseudo->save();
