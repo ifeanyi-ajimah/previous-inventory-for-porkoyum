@@ -14,7 +14,7 @@ class AddOnlineIdToCustomersTable extends Migration
     public function up()
     {
         Schema::table('customers', function (Blueprint $table) {
-            $table->integer('onlineID')->nullable();
+            $table->integer('onlineID')->after('url')->nullable();
         });
     }
 
