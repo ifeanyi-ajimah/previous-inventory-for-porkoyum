@@ -55,7 +55,7 @@
                         @foreach($customerOrders as $customerOrder)
                             <tr>
                                 <td>{{ $customerOrder->id }}</td>
-                                <td>{{ $product_cat[$customerOrder->product_cat_id] }}</td>
+                                <td>{{ $product_cat[$customerOrder->product_id] }}</td>
                                 <td>{{ $customerOrder->product->product_name }}</td>
                                 <td>{{ formatDate($customerOrder->created_at) }}</td>
                                 <td>

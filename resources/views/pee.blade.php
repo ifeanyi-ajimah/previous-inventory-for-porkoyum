@@ -1,4 +1,9 @@
 {{$endpoint}}
-@foreach ($users as $user)
-    <p><?var_dump($user)?></p>
-@endforeach
+
+<?
+    foreach ($users as $key => $user) {
+        echo "<p>";
+        var_dump($user);
+        echo '</p>';
+    }
+?>

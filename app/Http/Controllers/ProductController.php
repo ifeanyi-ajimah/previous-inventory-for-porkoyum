@@ -6,13 +6,12 @@ use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Product;
 use App\CommsExec;
-use App\ProductCategory;
 use App\Order;
 use Illuminate\Support\Facades\Session;
 use Auth;
 
 class ProductController extends Controller
-{   
+{
     public function store(Request $request, $procat_id)
     {
         $this->validate($request, [
@@ -54,7 +53,7 @@ class ProductController extends Controller
         {
             event(new \App\Events\DeleteProduct($copy->name));
         }
-        
+
         return response()->json(['message' =>$copy->product_name. "has been deleted"]);
     }
 
@@ -85,20 +84,20 @@ class ProductController extends Controller
 
     public function ordersbyproduct($product_name)
     {
-        $id = ProductCategory::where('category_name', $product_name)->pluck('id');
+        $id = Product::where('product_name', $product_name)->pluck('id');
 
         if (request()->has('date')) {
 
             $chosenDate = request('date');
 
             $orders = Order::with('customer', 'product', 'state', 'commsexec', 'user')
-                ->where('product_cat_id', $id)
+                ->where('id', $id)
                 ->whereDate('created_at', Carbon::parse($chosenDate))
                 ->orderBy('created_at', 'DESC')
                 ->simplePaginate(20);
         } else {
             $orders = Order::with('customer', 'product', 'state', 'commsexec', 'user')
-                ->where('product_cat_id', $id)
+                ->where('id', $id)
                 ->orderBy('created_at', 'DESC')
                 ->simplePaginate(20);
         }

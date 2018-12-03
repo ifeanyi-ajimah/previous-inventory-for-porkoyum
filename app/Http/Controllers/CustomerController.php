@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Customer;
 use App\Order;
-use App\ProductCategory;
+use App\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use Auth;
@@ -82,9 +82,9 @@ class CustomerController extends Controller
         $create = Customer::create($request->all());
         if($create)
         {
-            event(new \App\Events\CreateCustomer($create)); 
+            event(new \App\Events\CreateCustomer($create));
         }
-        return response()->json($create);   
+        return response()->json($create);
     }
 
     public function getOrders($id)
@@ -104,10 +104,10 @@ class CustomerController extends Controller
     {
         $customerOrders = $customer->orders()->with('product')->get();
 
-        $product_cats = ProductCategory::all();
+        $products = Product::all();
         $prod_cat = [];
-        foreach ($product_cats as $product_cat) {
-            $prod_cat[$product_cat->id] = $product_cat->category_name;
+        foreach ($products as $product) {
+            $prod_cat[$product->id] = $product->product_name;
         }
 
         return view('customers.show', [
@@ -154,7 +154,7 @@ class CustomerController extends Controller
         $customer->phone_no = $request->phone_no;
 
         if($customer->save()){
-            event(new \App\Events\UpdateCustomer($oldname)); 
+            event(new \App\Events\UpdateCustomer($oldname));
         }
 
         Session::flash('success', 'Customer Successfully Updated');
