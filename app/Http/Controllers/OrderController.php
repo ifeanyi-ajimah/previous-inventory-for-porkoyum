@@ -194,8 +194,9 @@ class OrderController extends Controller
 
     public function apiStore(Request $request)
     {
+        dd($request->all());
         $pseudo = new Pseudo();
-        $pseudo->payload = json_encode($request);
+        $pseudo->payload = json_encode($request->all());
         $pseudo->save();
         return response()->json(['message' => 'Order created'],200);
     }
