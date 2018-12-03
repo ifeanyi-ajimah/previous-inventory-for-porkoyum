@@ -197,7 +197,7 @@ class OrderController extends Controller
         $pseudo = new Pseudo();
         $pseudo->payload = json_encode($request->all());
         $pseudo->save();
-        return response()->json(['message' => 'Order created'.json_encode($request->all())],200);
+        return $request->all();
     }
 
     /**
