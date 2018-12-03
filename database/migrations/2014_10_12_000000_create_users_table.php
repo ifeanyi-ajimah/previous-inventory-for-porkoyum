@@ -30,7 +30,17 @@ class CreateUsersTable extends Migration
                     'email' => 'info@porkoyum.com',
                     'password' => '$2y$10$4ht5c.U1sXYmoU1BfDWcoOkEBwn1lRY8dylcP7nRc1c67ZiHrobgq',
                     'remember_token' => str_random(10),
-                    
+
+                )
+            );
+            DB::table('users')->insert(
+                array(
+                    'id' => 2,
+                    'name' => 'website',
+                    'email' => 'peter.okafor@landlagos.com',
+                    'password' => '$2y$10$4ht5c.U1sXYmoU1BfDWcoOkEBwn1lRY8dylcP7nRc1c67ZiHrobgq',
+                    'remember_token' => str_random(10),
+
                 )
             );
     }
