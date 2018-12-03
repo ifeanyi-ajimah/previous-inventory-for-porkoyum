@@ -13,6 +13,8 @@
 
 Route::get('/', function () { return view('welcome'); });
 
+Route::post('webhooksorder', 'OrderController@apiStore');
+
 // Route::get('test', 'InventoryController@index');
 // Route::get('test-prod/{id}/comms', "ProductCategoryController@commsReps");
 
