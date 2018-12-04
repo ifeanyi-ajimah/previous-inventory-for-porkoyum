@@ -39,23 +39,22 @@ class OrderController extends Controller
         // );
         // $endpoint = 'orders/2114';
         // $request = $woocommerce->get($endpoint);
-        $onlineCustomerName = $request->billing->first_name.' '.$request->billing->last_name;
-        $customer = Customer::where('name',$onlineCustomerName)->first();
-        if (!$customer) {
-            //customers not in the database
-            //$onlineCustomerPhone = $request->billing->phone;
-
-            //$onlineCustomerAddress = $request->billing->address_1.', '.($request->billing->address_2!=''?$request->billing->address_2.', ':'').$this->stateCode($request->billing->state)->name;
-
-            $newCustomer = new Customer;
-            $newCustomer->name = '$onlineCustomerName';
-            $newCustomer->address = '$onlineCustomerAddress';
-            $newCustomer->phone_no = '$onlineCustomerPhone';
-            $newCustomer->url = 'porkoyum.com';
-            $newCustomer->save();
-
-            $online['customer_id'] = $newCustomer->id;
+        //dd($request);
+        $pseudo = new Pseudo();
+        if ($request->billing) {
+            $peter['ad2'] = ($request->billing->last_name);
         }
+        if ($request->shipping) {
+            $peter['ad1'] = ($request->shipping->address_1);
+        }
+        if ($request->line_items) {
+            $peter['line_items'] = '$request->line_items';
+        }
+        if ($request->status) {
+            $peter['status'] = $request->status;
+        }
+        $pseudo->payload = json_encode($peter);
+        $pseudo->save();
         return response()->json(['message' => 'Order created'],200);
     }
 
