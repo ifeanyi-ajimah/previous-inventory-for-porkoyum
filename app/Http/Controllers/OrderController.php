@@ -10,6 +10,7 @@ use App\Order;
 use App\Pseudo;
 use App\State;
 use App\Product;
+use App\User;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Auth;
 use Carbon\Carbon;
