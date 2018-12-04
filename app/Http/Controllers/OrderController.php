@@ -43,20 +43,18 @@ class OrderController extends Controller
         $customer = Customer::where('name',$onlineCustomerName)->first();
         if (!$customer) {
             //customers not in the database
-            $onlineCustomerPhone = $request->billing->phone;
+            //$onlineCustomerPhone = $request->billing->phone;
 
-            $onlineCustomerAddress = $request->billing->address_1.', '.($request->billing->address_2!=''?$request->billing->address_2.', ':'').$this->stateCode($request->billing->state)->name;
+            //$onlineCustomerAddress = $request->billing->address_1.', '.($request->billing->address_2!=''?$request->billing->address_2.', ':'').$this->stateCode($request->billing->state)->name;
 
             $newCustomer = new Customer;
-            $newCustomer->name = $onlineCustomerName;
-            $newCustomer->address = $onlineCustomerAddress;
-            $newCustomer->phone_no = $onlineCustomerPhone;
+            $newCustomer->name = '$onlineCustomerName';
+            $newCustomer->address = '$onlineCustomerAddress';
+            $newCustomer->phone_no = '$onlineCustomerPhone';
             $newCustomer->url = 'porkoyum.com';
             $newCustomer->save();
 
             $online['customer_id'] = $newCustomer->id;
-        } else {
-            $online['customer_id'] = $customer->id;
         }
         return response()->json(['message' => 'Order created'],200);
     }
