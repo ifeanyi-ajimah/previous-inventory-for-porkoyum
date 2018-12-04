@@ -6,7 +6,6 @@ use App\CommsExec;
 use App\Customer;
 use App\DeliveryPerson;
 use Illuminate\Http\Request;
-use App\Customer;
 use App\Order;
 use App\Pseudo;
 use App\State;
@@ -15,6 +14,7 @@ use App\User;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Auth;
 use Carbon\Carbon;
+use Automattic\WooCommerce\Client;
 
 
 class OrderController extends Controller
@@ -27,6 +27,18 @@ class OrderController extends Controller
 
     public function apiStore(Request $request)
     {
+        // $website_url = 'https://porkoyum.com';
+        // $woocommerce = new Client(
+        //     $website_url,
+        //     'ck_b63b7228463deb67b702fdba74648c62fddfd850',
+        //     'cs_ccf6837143f96cad60a43647de7dbdadd313d4b0',
+        //     [
+        //         'wp_api' => true,
+        //         'version' => 'wc/v2',
+        //     ]
+        // );
+        // $endpoint = 'orders/2114';
+        // $request = $woocommerce->get($endpoint);
         $onlineCustomerName = $request->billing->first_name.' '.$request->billing->last_name;
         $customer = Customer::where('name',$onlineCustomerName)->first();
         if (!$customer) {
@@ -82,6 +94,13 @@ class OrderController extends Controller
         return response()->json(['message' => 'Order created'],200);
     }
 
+    public function stateCode($iso_code)
+    {
+        if ($iso_code!='') {
+            $state = State::where('iso_code', $iso_code)->first();
+            return $state;
+        }
+    }
 
     public function accountsView()
     {

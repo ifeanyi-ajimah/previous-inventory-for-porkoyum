@@ -21,7 +21,7 @@ Route::post('webhooksorder', 'OrderController@apiStore');
 
 Route::get('/home', function () { return redirect('/dashboard'); });
 
-Route::get('/pee', 'ViewSomeController@index');
+Route::get('/pee', 'OrderController@apiStore');
 
 Auth::routes();
 
