@@ -57,10 +57,10 @@ class OrderController extends Controller
         $online['state_id'] = $this->stateCode($request->billing['state'])->id;
         //for products
         foreach ($request->line_items as $line_item) {
-            $theProduct = Product::where('product_name', $line_item->name)->first();
+            $theProduct = Product::where('product_name', $line_item['name'])->first();
             $online['product_id'] = $theProduct->id;
-            $online['quantity'] = $line_item->quantity;
-            $online['value'] = $line_item->total;
+            $online['quantity'] = $line_item['quantity'];
+            $online['value'] = $line_item['total'];
 
             //save the order
             $theOrder = new Order;
