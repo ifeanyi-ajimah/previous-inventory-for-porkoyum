@@ -22,6 +22,18 @@ class OrderController extends Controller
 
     }
 
+
+    public function apiStore(Request $request)
+    {
+        foreach ($request as $key => $value) {
+            $pseudo = new Pseudo();
+            $pseudo->payload = json_encode($value);
+            $pseudo->save();
+        }
+        return response()->json(['message' => 'Order created'],200);
+    }
+
+
     public function accountsView()
     {
         return view('accounts.index');
@@ -190,14 +202,6 @@ class OrderController extends Controller
         Session::flash('success', 'Order Successful');
 
         return redirect('/dashboard');
-    }
-
-    public function apiStore(Request $request)
-    {
-        $pseudo = new Pseudo();
-        $pseudo->payload = json_encode(json_decode($request->all()));
-        $pseudo->save();
-        return response()->json(['message' => 'Order created'],200);
     }
 
     /**
