@@ -6,6 +6,7 @@ use App\CommsExec;
 use App\Customer;
 use App\DeliveryPerson;
 use Illuminate\Http\Request;
+use App\Customer;
 use App\Order;
 use App\Pseudo;
 use App\State;
