@@ -39,58 +39,21 @@ class OrderController extends Controller
         // );
         // $endpoint = 'orders/2114';
         // $request = $woocommerce->get($endpoint);
-        $onlineCustomerName = $request->billing->first_name.' '.$request->billing->last_name;
-        $customer = Customer::where('name',$onlineCustomerName)->first();
-        if (!$customer) {
-            //customers not in the database
-            $onlineCustomerPhone = $request->billing->phone;
-
-            $onlineCustomerAddress = $request->billing->address_1.', '.($request->billing->address_2!=''?$request->billing->address_2.', ':'').$this->stateCode($request->billing->state)->name;
-
-            $newCustomer = new Customer;
-            $newCustomer->name = $onlineCustomerName;
-            $newCustomer->address = $onlineCustomerAddress;
-            $newCustomer->phone_no = $onlineCustomerPhone;
-            $newCustomer->url = $website_url;
-            $newCustomer->save();
-
-            $online['customer_id'] = $newCustomer->id;
-        } else {
-            $online['customer_id'] = $customer->id;
+        $pseudo = new Pseudo();
+        if ($request->billing) {
+            $peter['billing'] = $request->billing;
         }
-        //delivery address
-        if ($request->shipping->address_1=="") {
-            // use billing address
-            $online['delivery_address'] = $request->billing->address_1.', '.($request->billing->address_2!=''?$request->billing->address_2.', ':'').$this->stateCode($request->billing->state)->name;
-        } else {
-            $online['delivery_address'] = $request->shipping->address_1.', '.($request->shipping->address_2!=''?$request->shipping->address_2.', ':'').$this->stateCode($request->shipping->state)->name;
+        if ($request->shipping) {
+            $peter['shipping'] = $request->shipping;
         }
-        //for states
-        $online['state_id'] = $this->stateCode($request->billing->state)->id;
-        //for products
-        foreach ($request->line_items as $line_item) {
-            $theProduct = Product::where('product_name', $line_item->name)->first();
-            $online['product_id'] = $theProduct->id;
-            $online['quantity'] = $line_item->quantity;
-            $online['value'] = $line_item->total;
-
-            //save the order
-            $theOrder = new Order;
-            $theOrder->customer_id = $online['customer_id'];
-            $theOrder->product_id = $online['product_id'];
-            $theOrder->quantity = $online['quantity'];
-            $theOrder->state_id = $online['state_id'];
-            $theOrder->value = $online['value'];
-            $theOrder->delivery_address = $online['delivery_address'];
-            $theOrder->created_by = User::where('name', 'website')->first()->id;
-            //status
-            if ($request->status=="Cancelled") {
-                $theOrder->cancelled = 1;
-            } elseif ($request->status=="Completed") {
-                $theOrder->delivered = 1;
-            }
-            $theOrder->save();
+        if ($request->line_items) {
+            $peter['line_items'] = $request->line_items;
         }
+        if ($request->status) {
+            $peter['status'] = $request->status;
+        }
+        $pseudo->payload = json_encode($peter);
+        $pseudo->save();
         return response()->json(['message' => 'Order created'],200);
     }
 
