@@ -40,13 +40,13 @@ class OrderController extends Controller
         // $endpoint = 'orders/2114';
         // $request = $woocommerce->get($endpoint);
         //dd($request);
-        $pseudo = new Pseudo();
-        $peter = '';
-        if ($request->billing) {
-            foreach ($request->billing as $key => $value) {
-                $peter .= ' '.$key.' '.$value;
-            }
+        //$pseudo = new Pseudo();
+        $onlineCustomerName = $request->billing->first_name.' '.$request->billing->last_name;
+        $customer = Customer::where('name',$onlineCustomerName)->first();
 
+        //$peter = '';
+        if ($request->billing) {
+            $peter = gettype($request->billing);
         }
         $pseudo->payload = $peter;
         $pseudo->save();
