@@ -41,19 +41,14 @@ class OrderController extends Controller
         // $request = $woocommerce->get($endpoint);
         //dd($request);
         $pseudo = new Pseudo();
+        $peter = '';
         if ($request->billing) {
-            $peter['ad2'] = ($request->billing->last_name);
+            foreach ($request->billing as $key => $value) {
+                $peter .= ' '.$key.' '.$value;
+            }
+
         }
-        if ($request->shipping) {
-            $peter['ad1'] = ($request->shipping->address_1);
-        }
-        if ($request->line_items) {
-            $peter['line_items'] = '$request->line_items';
-        }
-        if ($request->status) {
-            $peter['status'] = $request->status;
-        }
-        $pseudo->payload = json_encode($peter);
+        $pseudo->payload = $peter;
         $pseudo->save();
         return response()->json(['message' => 'Order created'],200);
     }
