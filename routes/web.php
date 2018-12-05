@@ -13,13 +13,16 @@
 
 Route::get('/', function () { return view('welcome'); });
 
+Route::post('webhooksorder', 'OrderController@apiOrderCreated');
+Route::post('webhooksorderupdate', 'OrderController@apiOrderUpdated');
+
 // Route::get('test', 'InventoryController@index');
 // Route::get('test-prod/{id}/comms', "ProductCategoryController@commsReps");
 
 
 Route::get('/home', function () { return redirect('/dashboard'); });
 
-Route::get('/pee', 'ViewSomeController@index');
+Route::get('/pee', 'OrderController@apiStore');
 
 Auth::routes();
 

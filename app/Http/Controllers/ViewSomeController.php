@@ -15,7 +15,7 @@ class ViewSomeController extends Controller
 {
     public function index(){
         //$users = DB::connection('mysql2')->select('select * from inventory where id = ?', [1]);
-        $website_url = 'http://wordpress-210253-675094.cloudwaysapps.com';
+        $website_url = 'https://porkoyum.com';
         $woocommerce = new Client(
             $website_url,
             'ck_b63b7228463deb67b702fdba74648c62fddfd850',

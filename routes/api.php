@@ -41,5 +41,3 @@ Route::patch('orders/{id}/delivery-person/', 'OrderController@assignDeliveryPers
 Route::post('orders/autodoctor', 'OrderController@autoDoctor');
 Route::post('orders/mark-as-delivered', 'OrderController@markAsDelivered');
 Route::post('orders/mark-as-pending', 'OrderController@markAsPending');
-
-Route::get('orders/create', 'OrderController@apiStore');

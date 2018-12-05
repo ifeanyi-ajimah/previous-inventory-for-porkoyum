@@ -10,9 +10,11 @@ use App\Order;
 use App\Pseudo;
 use App\State;
 use App\Product;
+use App\User;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Auth;
 use Carbon\Carbon;
+use Automattic\WooCommerce\Client;
 
 
 class OrderController extends Controller
@@ -20,6 +22,122 @@ class OrderController extends Controller
     public function __construct()
     {
 
+    }
+
+
+    public function apiOrderUpdated(Request $request)
+    {
+        $modifiedOrders = Order::where('onlineID',$request->id)->get();
+
+        //modify entries for each order above
+        foreach ($modifiedOrders as $key => $theOrder) {
+            //customer details
+            $pseudo = new Pseudo;
+            $pseudo->payload = $theOrder->customer->name;
+            $pseudo->save();
+            // $theOrder->customer->name = $request->billing['first_name'].' '.$request->billing['last_name'];
+            // $theOrder->customer->address = $request->billing['address_1'].', '.($request->billing['address_2']!=''?$request->billing['address_2'].', ':'').$this->stateCode($request->billing['state'])->name;
+            // $theOrder->customer->phone_no = $request->billing['phone'];
+            // $theOrder->customer->onlineID = $request->customer_id;
+            // //delivery address
+            // if ($request->shipping['address_1']=="") {
+            //     $theOrder->delivery_address = $request->billing['address_1'].', '.($request->billing['address_2']!=''?$request->billing['address_2'].', ':'').$this->stateCode($request->billing['state'])->name;
+            // } else {
+            //     $theOrder->delivery_address = $request->shipping['address_1'].', '.($request->shipping['address_2']!=''?$request->shipping['address_2'].', ':'').$this->stateCode($request->shipping['state'])->name;
+            // }
+            // //state
+            // $theOrder->state_id = $this->stateCode($request->billing['state'])->id;
+            //
+            // foreach ($request->line_items as $line_item) {
+            //     //if this line item corresponds with the current order then make the neccesary changes
+            //     if ($line_item==['name']==$theOrder->product->product_name) {
+            //         $theOrder->quantity = $line_item['quantity'];
+            //         $theOrder->value = $line_item['total'];
+            //     }
+            // }
+            // //status
+            // if ($request->status=="Cancelled") {
+            //     $theOrder->cancelled = 1;
+            //     $theOrder->delivered = 0;
+            // } elseif ($request->status=="Completed") {
+            //     $theOrder->delivered = 1;
+            //     $theOrder->cancelled = 0;
+            // }
+            // $theOrder->save();
+        }
+
+        return response()->json(['message' => 'Order created'],200);
+    }
+
+    public function apiOrderCreated(Request $request)
+    {
+        $onlineCustomerName = $request->billing['first_name'].' '.$request->billing['last_name'];
+        $onlineCustomerID = $request->customer_id;
+        $customer = Customer::where([
+                ['onlineID', '=', $onlineCustomerID],
+                ['name', '=', $onlineCustomerName]
+            ])->first();
+        if (!$customer) {
+            //customers not in the database
+            $onlineCustomerPhone = $request->billing['phone'];
+
+            $onlineCustomerAddress = $request->billing['address_1'].', '.($request->billing['address_2']!=''?$request->billing['address_2'].', ':'').$this->stateCode($request->billing['state'])->name;
+
+            $newCustomer = new Customer;
+            $newCustomer->name = $onlineCustomerName;
+            $newCustomer->address = $onlineCustomerAddress;
+            $newCustomer->phone_no = $onlineCustomerPhone;
+            $newCustomer->onlineID = $onlineCustomerID;
+            $newCustomer->url = 'porkoyum.com';
+            $newCustomer->save();
+
+            $online['customer_id'] = $newCustomer->id;
+        } else {
+            $online['customer_id'] = $customer->id;
+        }
+        //delivery address
+        if ($request->shipping['address_1']=="") {
+            // use billing address
+            $online['delivery_address'] = $request->billing['address_1'].', '.($request->billing['address_2']!=''?$request->billing['address_2'].', ':'').$this->stateCode($request->billing['state'])->name;
+        } else {
+            $online['delivery_address'] = $request->shipping['address_1'].', '.($request->shipping['address_2']!=''?$request->shipping['address_2'].', ':'').$this->stateCode($request->shipping['state'])->name;
+        }
+        //for states
+        $online['state_id'] = $this->stateCode($request->billing['state'])->id;
+        //for products
+        foreach ($request->line_items as $line_item) {
+            $theProduct = Product::where('product_name', $line_item['name'])->first();
+            $online['product_id'] = $theProduct->id;
+            $online['quantity'] = $line_item['quantity'];
+            $online['value'] = $line_item['total'];
+
+            //save the order
+            $theOrder = new Order;
+            $theOrder->customer_id = $online['customer_id'];
+            $theOrder->product_id = $online['product_id'];
+            $theOrder->quantity = $online['quantity'];
+            $theOrder->state_id = $online['state_id'];
+            $theOrder->value = $online['value'];
+            $theOrder->delivery_address = $online['delivery_address'];
+            $theOrder->created_by = User::where('name', 'website')->first()->id;
+            $theOrder->onlineID = $request->id;
+            //status
+            if ($request->status=="Cancelled") {
+                $theOrder->cancelled = 1;
+            } elseif ($request->status=="Completed") {
+                $theOrder->delivered = 1;
+            }
+            $theOrder->save();
+        }
+        return response()->json(['message' => 'Order created'],200);
+    }
+
+    public function stateCode($iso_code)
+    {
+        if ($iso_code!='') {
+            $state = State::where('iso_code', $iso_code)->first();
+            return $state;
+        }
     }
 
     public function accountsView()
@@ -190,14 +308,6 @@ class OrderController extends Controller
         Session::flash('success', 'Order Successful');
 
         return redirect('/dashboard');
-    }
-
-    public function apiStore(Request $request)
-    {
-        $pseudo = new Pseudo();
-        $pseudo->payload = json_encode($request);
-        $pseudo->save();
-        return response()->json(['message' => 'Order created'],200);
     }
 
     /**
