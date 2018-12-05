@@ -27,43 +27,45 @@ class OrderController extends Controller
 
     public function apiOrderUpdated(Request $request)
     {
-        $modifiedOrders = Order::where('onlineID',$request->id);
-        //modify entries for each order above
-        foreach ($modifiedOrders as $key => $theOrder) {
+        $modifiedOrders = Order::where('onlineID',$request->id)->get();
+        foreach ($modifiedOrders as $key => $value) {
             $pseudo = new Pseudo;
-            $pseudo->payload = $theOrder->id;
+            $pseudo->payload = $value->id;
             $pseudo->save();
-            //customer details
-            // $theOrder->customer->name = $request->billing['first_name'].' '.$request->billing['last_name'];
-            // $theOrder->customer->address = $request->billing['address_1'].', '.($request->billing['address_2']!=''?$request->billing['address_2'].', ':'').$this->stateCode($request->billing['state'])->name;
-            // $theOrder->customer->phone_no = $request->billing['phone'];
-            // $theOrder->customer->onlineID = $request->customer_id;
-            // //delivery address
-            // if ($request->shipping['address_1']=="") {
-            //     $theOrder->delivery_address = $request->billing['address_1'].', '.($request->billing['address_2']!=''?$request->billing['address_2'].', ':'').$this->stateCode($request->billing['state'])->name;
-            // } else {
-            //     $theOrder->delivery_address = $request->shipping['address_1'].', '.($request->shipping['address_2']!=''?$request->shipping['address_2'].', ':'').$this->stateCode($request->shipping['state'])->name;
-            // }
-            // //state
-            // $theOrder->state_id = $this->stateCode($request->billing['state'])->id;
-            //
-            // foreach ($request->line_items as $line_item) {
-            //     //if this line item corresponds with the current order then make the neccesary changes
-            //     if ($line_item==['name']==$theOrder->product->product_name) {
-            //         $theOrder->quantity = $line_item['quantity'];
-            //         $theOrder->value = $line_item['total'];
-            //     }
-            // }
-            // //status
-            // if ($request->status=="Cancelled") {
-            //     $theOrder->cancelled = 1;
-            //     $theOrder->delivered = 0;
-            // } elseif ($request->status=="Completed") {
-            //     $theOrder->delivered = 1;
-            //     $theOrder->cancelled = 0;
-            // }
-            // $theOrder->save();
         }
+        //modify entries for each order above
+        // foreach ($modifiedOrders as $key => $theOrder) {
+        //     //customer details
+        //     $theOrder->customer->name = $request->billing['first_name'].' '.$request->billing['last_name'];
+        //     $theOrder->customer->address = $request->billing['address_1'].', '.($request->billing['address_2']!=''?$request->billing['address_2'].', ':'').$this->stateCode($request->billing['state'])->name;
+        //     $theOrder->customer->phone_no = $request->billing['phone'];
+        //     $theOrder->customer->onlineID = $request->customer_id;
+        //     //delivery address
+        //     if ($request->shipping['address_1']=="") {
+        //         $theOrder->delivery_address = $request->billing['address_1'].', '.($request->billing['address_2']!=''?$request->billing['address_2'].', ':'').$this->stateCode($request->billing['state'])->name;
+        //     } else {
+        //         $theOrder->delivery_address = $request->shipping['address_1'].', '.($request->shipping['address_2']!=''?$request->shipping['address_2'].', ':'').$this->stateCode($request->shipping['state'])->name;
+        //     }
+        //     //state
+        //     $theOrder->state_id = $this->stateCode($request->billing['state'])->id;
+        //
+        //     foreach ($request->line_items as $line_item) {
+        //         //if this line item corresponds with the current order then make the neccesary changes
+        //         if ($line_item==['name']==$theOrder->product->product_name) {
+        //             $theOrder->quantity = $line_item['quantity'];
+        //             $theOrder->value = $line_item['total'];
+        //         }
+        //     }
+        //     //status
+        //     if ($request->status=="Cancelled") {
+        //         $theOrder->cancelled = 1;
+        //         $theOrder->delivered = 0;
+        //     } elseif ($request->status=="Completed") {
+        //         $theOrder->delivered = 1;
+        //         $theOrder->cancelled = 0;
+        //     }
+        //     $theOrder->save();
+        // }
 
         return response()->json(['message' => 'Order created'],200);
     }
