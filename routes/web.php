@@ -22,7 +22,7 @@ Route::post('webhooksorderupdate', 'OrderController@apiOrderUpdated');
 
 Route::get('/home', function () { return redirect('/dashboard'); });
 
-Route::get('/pee', 'OrderController@apiStore');
+Route::get('/pee', 'OrderController@apiOrderUpdated');
 
 Auth::routes();
 
