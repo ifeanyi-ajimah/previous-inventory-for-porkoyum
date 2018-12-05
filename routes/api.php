@@ -22,7 +22,7 @@ Route::get('productcategory/{id}/comms-reps', 'ProductCategoryController@commsRe
 
 Route::get('accounts', 'OrderController@accounts');
 
-Route::get('customers', 'CustomersController@findall');
+Route::get('customers', 'CustomerController@findall');
 Route::get('customers/search', 'CustomerController@search');
 Route::get('users/search', 'UserController@search');
 Route::get('customers/{customer}', 'CustomerController@find');

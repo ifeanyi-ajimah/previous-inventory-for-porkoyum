@@ -46,7 +46,7 @@
                                         <li><a href="{{ route('roles.index') }}"><span class="glyphicon glyphicon-th-list"></span>&nbsp; Roles</a></li>
                                         <li><a href="{{ route('permissions.index') }}"><span class="glyphicon glyphicon-check"></span>&nbsp; Permissions</a></li>
                                         <li><a href="{{ route('commsexecs.index') }}"><span class="glyphicon glyphicon-user"></span>&nbsp; Comms Personnel</a></li>
-                                        <li><a href="{{ route('productcat.index') }}"><span class="glyphicon glyphicon-th-list"></span>&nbsp; Product Categories</a></li>
+                                        <li><a href="{{ route('products.index') }}"><span class="glyphicon glyphicon-th-list"></span>&nbsp; Products</a></li>
                                         <li><a href="{{ route('deliverypersons.index') }}"><span class="glyphicon glyphicon-plane"></span>&nbsp; Delivery Persons</a></li>
                                         <li><a href="/states"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;Regions</a></li>
                                         <li><a href="/region"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;Service Zone</a></li>

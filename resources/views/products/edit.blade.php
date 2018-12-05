@@ -69,7 +69,8 @@
             <h4>Edit Product - <strong>{{ $product->product_name }}</strong></h4>
             <hr/>
 
-            {!! Form::model($product, ['route' => ['products.update', $product->id], 'method' => 'PUT', 'data-parsley-validate' => '']) !!}
+            {!! Form::model($product, ['route' => ['products.update', $product->id], 'method' => 'POST',  'data-parsley-validate' => '']) !!}
+            {{ method_field('PUT') }}
 
                 <div class="form-group col-md-6">
                     {{ Form::label('product_name', 'Product Name') }}
@@ -81,12 +82,44 @@
                     {{ Form::text('price', null, ['class' => 'inputtext form-control', 'required' => '']) }}
                 </div>
 
-                {{ Form::hidden('product_cat_id', $product_cat_id) }}
+                <div class="form-group col-md-6">
+                        {{ Form::label('dashboard_color', 'Product Dashboard Color') }}
+                        <select name="dashboard_color" class="" required>
+                            <option disabled selected>Select color</option>
+                            <option value="info">blue</option>
+                            <option value="danger">red</option>
+                            <option value="success">green</option>
+                            <option value="warning">yellow</option>
+                        </select>
+                </div>
 
+
+                <div class="form-group col-md-6">
+                    {{ Form::label('description', 'Description') }}
+                    {{ Form::text('description', null, ['class' => 'inputtext form-control', 'required' => '']) }}
+                </div>
+
+                <div class="form-group col-md-6">
+                        {{ Form::label('image', 'Product Image') }}
+                        {{ Form::file('image') }}
+                </div>
+
+                
+
+                {{ Form::hidden('id', $product->id) }}
+
+                <div class="form-group col-md-6">
                 {{ Form::submit('Update Product', ['class' => 'inputbutton btn btn-primary']) }}
+                </div>
 
             {!! form::close() !!}
-
+            
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <a href="{{route('products.index')}}" class="btn btn-primary">Back to Product List</a>
     </div>
 </div>
 

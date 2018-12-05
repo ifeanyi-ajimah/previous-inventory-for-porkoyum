@@ -17,7 +17,8 @@ class CreateProductsTable extends Migration
             $table->increments('id');
             $table->string('product_name');
             $table->integer('price');
-            $table->string('dashboard_color');
+            $table->string('dashboard_color')->nullable();
+            $table->string('description')->nullable();
             $table->string('image');
             $table->timestamps();
 
@@ -30,6 +31,7 @@ class CreateProductsTable extends Migration
                     'product_name' => 'Porkoyum Sausage',
                     'price' => '1500',
                     'dashboard_color' => 'warning',
+                    'description' => 'This is an amazing sausage',
                     'image' => 'baconimg.png',
                     'created_at' => date_create('now')->format('Y-m-d H:i:s'),
                     'updated_at' => date_create('now')->format('Y-m-d H:i:s'),
@@ -41,6 +43,7 @@ class CreateProductsTable extends Migration
                     'product_name' => 'Porkoyum Bacon',
                     'price' => '1800',
                     'dashboard_color' => 'danger',
+                    'description' => 'This is an amazing Bacon',
                     'image' => 'sausageimg.png',
                     'created_at' => date_create('now')->format('Y-m-d H:i:s'),
                     'updated_at' => date_create('now')->format('Y-m-d H:i:s'),

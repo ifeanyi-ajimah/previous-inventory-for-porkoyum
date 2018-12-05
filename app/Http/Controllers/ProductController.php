@@ -12,75 +12,93 @@ use Auth;
 
 class ProductController extends Controller
 {
-    public function store(Request $request, $procat_id)
+    Public function index()
     {
-        $this->validate($request, [
-            'product_name' => 'required | unique:products,product_name',
-            'price' => 'required | integer',
-        ]);
-
-        $product = new Product();
-
-        $product->product_name = $request->input('product_name');
-        $product->price = $request->input('price');
-
-        $product_cat = ProductCategory::find($procat_id);
-
-        if($product_cat->products()->save($product))
-        {
-            event(new \App\Events\CreateProduct($product));
-        }
-
-        Session::flash('success', 'Product successfully added');
-
-        return redirect()->route('productcat.show', $procat_id);
+        $products = Product::all();
+        return view('products.index',compact('products'));
     }
 
 
     public function edit($product_id)
     {
         $product = Product::find($product_id);
-        $product_cat_id = $product->product_cat->id;
-
-        return view('products.edit')
-            ->with('product', $product)
-            ->with('product_cat_id', $product_cat_id);
+        return view('products.edit',compact('product'));
     }
 
-    public function destroy(Product $product){
-        $copy = $product;
-        if($product->delete())
-        {
-            event(new \App\Events\DeleteProduct($copy->name));
-        }
 
-        return response()->json(['message' =>$copy->product_name. "has been deleted"]);
-    }
-
-    public function update(Request $request, $product_id)
+    public function store(Request $request)
     {
-        $product = Product::find($product_id);
-
-        $name = $product->product_name;
-
         $this->validate($request, [
             'product_name' => 'required | unique:products,product_name',
-            'price' => 'required | integer',
+            'price' => 'required |integer',
+            'description' =>'required',
+            'image'=>'image|mimes:png,jpg,jpeg,max:10000',
         ]);
 
-        $product_cat_id = $request->input('product_cat_id');
+        if($request->hasFile('image')){
+        $imageName = $request->image->getClientOriginalName();
+        $request ->image->move('images',$imageName);
+        /*$file_path = $request->image->getPathName();
+        return $file_path;*/
+        $product = new Product();
+        $product->product_name = $request->product_name;
+        $product->price = $request->price;
+        $product->dashboard_color = $request->dashboard_color;
+        $product->description = $request->description;
+        $product->image = $imageName;
+        $product->save();
 
-        $product->product_name = $request->input('product_name');
-        $product->price = $request->input('price');
-        if($product->save())
-        {
-            event(new \App\Events\UpdateProduct($name));
+
+        }
+
+        Session::flash('success', 'Product successfully added');
+
+        return redirect()->route('products.index');
+    }
+
+
+    public function update(Request $request, $id)
+    {   //dd($request->all());
+        $this->validate($request, [
+            'product_name' => 'required',
+            'price' => 'required |integer',
+            'description' =>'required',
+            'image'=>'required',
+        ]);
+
+        if($request->hasFile('image')){
+        $imageName = $request->image->getClientOriginalName();
+        $request->image->move('images',$imageName);
+
+        $product = Product::find($id);
+        $product->product_name = $request->product_name;
+        $product->price = $request->price;
+        $product->dashboard_color = $request->dashboard_color;
+        $product->description = $request->description;
+        $product->image = $imageName;
+        $product->save();
         }
 
         Session::flash('success', 'Product successfully updated');
 
-        return redirect()->route('productcat.show', $product_cat_id);
+        return redirect()->route('products.index');
     }
+
+
+
+    public function destroy( $id){
+        Product::find($id)->delete();
+
+        Session::flash('success','Product deleted');
+        return redirect()->route('products.index');
+    }
+
+
+   
+
+
+
+
 
     public function ordersbyproduct($product_name)
     {

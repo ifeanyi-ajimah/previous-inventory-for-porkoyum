@@ -84,7 +84,7 @@ Route::middleware('auth')->group(function (){
 		Route::post('/custStore', 'CustomerController@storeCustomer')->name('custajax.store');
 
 		Route::delete('/productcategories/{category}', 'ProductCategoryController@destroy')->name('productcat.delete');
-		Route::delete('products/{product}', ['as' => 'products.destroy', 'uses' => 'ProductController@destroy']);
+		/*Route::delete('products/{product}', ['as' => 'products.destroy', 'uses' => 'ProductController@destroy']);*/
 	});
 
 	// Routes only Cooms should see
@@ -106,16 +106,19 @@ Route::middleware('auth')->group(function (){
 	Route::middleware('checkrole:inventory,admin')->group(function (){
 		Route::resource('/states', 'StateController', ['except' => ['show', 'delete', 'create']]);
 		Route::get('/productcategories', 'ProductCategoryController@index')->name('productcat.index');
-		Route::get('products/{product_id}/edit', ['as' => 'products.edit', 'uses' => 'ProductController@edit']);
 		Route::get('/productcategories/{id}/view', 'ProductCategoryController@show')->name('productcat.show');
 
-		Route::put('/productcategories/{id}', 'ProductCategoryController@update')->name('productcat.update');
-		Route::put('products/{product_id}', ['as' => 'products.update', 'uses' => 'ProductController@update']);
+		
 
-		Route::post('/productcategories', 'ProductCategoryController@store')->name('productcat.store');
-		Route::post('products/{product_cat_id}', ['as' => 'products.store', 'uses' => 'ProductController@store']);
+	
 
-
+		/*Route::get('/products-index','ProductController@index')->name('products.index');
+		Route::get('/products/{id}','ProductController@show')->name('products.show');
+		Route::get('/products/{id}/edit','ProductController@edit')->name('products.edit');
+		Route::post('/products/{id}','ProductController@destroy')->name('products.delete');
+		Route::post('/products','ProductController@store')->name('products.store');
+		Route::post('/products/{id}','ProductController@update')->name('products.update');*/
+		Route::resource('/products','ProductController');
 	});
 
 	// Routes only Confirmers should see
