@@ -133,7 +133,7 @@
                                             </div>
                                             <div class="media-body media-right">
                                                 <h2 class="media-heading">{{ $pcs[$order->product_id] }}</h2></strong>
-                                                <h4>&#8373; {{ number_format($order->total_sales) }} PV</h4>
+                                                <h4>&#8358; {{ number_format($order->total_sales) }} PV</h4>
                                                 <h4>{{ $order->orders_count }} Orders</h4>
                                                 {{--<h4>{{ $order->confirmed_orders }} Confirmed Orders</h4>--}}
                                                 {{--<h4>34 Confirmed Orders</h4>--}}
@@ -167,7 +167,7 @@
                                                 <tr>
                                                     <td>{{ $users[$usersOrder->created_by] }}</td>
                                                     <td>{{ $usersOrder->orders_count }}</td>
-                                                    <td>&#8373; {{ number_format($usersOrder->total_sales) }}</td>
+                                                    <td>&#8358; {{ number_format($usersOrder->total_sales) }}</td>
                                                 </tr>
                                                 @endisset
                                             @endforeach
@@ -192,7 +192,7 @@
                                                     <td>{{ $commsrep[$comm->id] }}</td>
                                                     <td>{{ $comm->orders_count }}</td>
 
-                                                    <td>&#8373; {{ number_format($comm->total_sales) }}</td>
+                                                    <td>&#8358; {{ number_format($comm->total_sales) }}</td>
                                                 </tr>
                                             @endforeach
                                         </tbody>
@@ -218,7 +218,7 @@
                                             </div>
                                             <div class="media-body media-right">
                                                 <h2 class="media-heading">{{ $pcs[$order->product_id] }}</h2></strong>
-                                                <h4>&#8373; {{ number_format($order->total_sales) }} PV</h4>
+                                                <h4>&#8358; {{ number_format($order->total_sales) }} PV</h4>
                                                 <h4>{{ $order->orders_count }} Orders</h4>
                                                 {{--<h4>{{ $order->confirmed_orders }} Confirmed Orders</h4>--}}
                                                 {{--<h4>34 Confirmed Orders</h4>--}}
@@ -252,7 +252,7 @@
                                                 <tr>
                                                     <td>{{ $users[$usersOrder->created_by] }}</td>
                                                     <td>{{ $usersOrder->orders_count }}</td>
-                                                    <td>&#8373; {{ number_format($usersOrder->total_sales) }}</td>
+                                                    <td>&#8358; {{ number_format($usersOrder->total_sales) }}</td>
                                                 </tr>
                                                 @endisset
                                             @endforeach
@@ -277,7 +277,7 @@
                                                     <td>{{ $commsrep[$comm->id] }}</td>
                                                     <td>{{ $comm->orders_count }}</td>
 
-                                                    <td>&#8373; {{ number_format($comm->total_sales) }}</td>
+                                                    <td>&#8358; {{ number_format($comm->total_sales) }}</td>
                                                 </tr>
                                             @endforeach
                                             </tbody>
@@ -303,7 +303,7 @@
                                             </div>
                                             <div class="media-body media-right">
                                                 <h2 class="media-heading">{{ $pcs[$order->product_id] }}</h2></strong>
-                                                <h4>&#8373; {{ number_format($order->total_sales) }} PV</h4>
+                                                <h4>&#8358; {{ number_format($order->total_sales) }} PV</h4>
                                                 <h4>{{ $order->orders_count }} Orders</h4>
                                                 {{--<h4>{{ $order->confirmed_orders }} Confirmed Orders</h4>--}}
                                                 {{--<h4>34 Confirmed Orders</h4>--}}
@@ -337,7 +337,7 @@
                                                 <tr>
                                                     <td>{{ $users[$usersOrder->created_by] }}</td>
                                                     <td>{{ $usersOrder->orders_count }}</td>
-                                                    <td>&#8373; {{ number_format($usersOrder->total_sales) }}</td>
+                                                    <td>&#8358; {{ number_format($usersOrder->total_sales) }}</td>
                                                 </tr>
                                                 @endisset
                                             @endforeach
@@ -362,7 +362,7 @@
                                                     <td>{{ $commsrep[$comm->id] }}</td>
                                                     <td>{{ $comm->orders_count }}</td>
 
-                                                    <td>&#8373; {{ number_format($comm->total_sales) }}</td>
+                                                    <td>&#8358; {{ number_format($comm->total_sales) }}</td>
                                                 </tr>
                                             @endforeach
                                             </tbody>
@@ -387,7 +387,7 @@
                                             </div>
                                             <div class="media-body media-right">
                                                 <h2 class="media-heading">{{ $pcs[$order->product_id] }}</h2></strong>
-                                                <h4>&#8373; {{ number_format($order->total_sales) }} PV</h4>
+                                                <h4>&#8358; {{ number_format($order->total_sales) }} PV</h4>
                                                 <h4>{{ $order->orders_count }} Orders</h4>
                                                 {{--<h4>{{ $order->confirmed_orders }} Confirmed Orders</h4>--}}
                                                 {{--<h4>34 Confirmed Orders</h4>--}}
@@ -421,7 +421,7 @@
                                                 <tr>
                                                     <td>{{ $users[$usersOrder->created_by] }}</td>
                                                     <td>{{ $usersOrder->orders_count }}</td>
-                                                    <td>&#8373; {{ number_format($usersOrder->total_sales) }}</td>
+                                                    <td>&#8358; {{ number_format($usersOrder->total_sales) }}</td>
                                                 </tr>
                                                 @endisset
                                             @endforeach
@@ -446,7 +446,7 @@
                                                     <td>{{ $commsrep[$comm->id] }}</td>
                                                     <td>{{ $comm->orders_count }}</td>
 
-                                                    <td>&#8373; {{ number_format($comm->total_sales) }}</td>
+                                                    <td>&#8358; {{ number_format($comm->total_sales) }}</td>
                                                 </tr>
                                             @endforeach
                                         </tbody>
@@ -472,7 +472,7 @@
                                             </div>
                                             <div class="media-body media-right">
                                                 <h2 class="media-heading">{{ $pcs[$order->product_id] }}</h2></strong>
-                                                <h4>&#8373; {{ number_format($order->total_sales) }} PV</h4>
+                                                <h4>&#8358; {{ number_format($order->total_sales) }} PV</h4>
                                                 <h4>{{ $order->orders_count }} Orders</h4>
                                                 {{--<h4>{{ $order->confirmed_orders }} Confirmed Orders</h4>--}}
                                                 {{--<h4>34 Confirmed Orders</h4>--}}
@@ -506,7 +506,7 @@
                                                 <tr>
                                                     <td>{{ $users[$usersOrder->created_by] }}</td>
                                                     <td>{{ $usersOrder->orders_count }}</td>
-                                                    <td>&#8373; {{ number_format($usersOrder->total_sales) }}</td>
+                                                    <td>&#8358; {{ number_format($usersOrder->total_sales) }}</td>
                                                 </tr>
                                                 @endisset
                                             @endforeach
@@ -531,7 +531,7 @@
                                                     <td>{{ $commsrep[$comm->id] }}</td>
                                                     <td>{{ $comm->orders_count }}</td>
 
-                                                    <td>&#8373; {{ number_format($comm->total_sales) }}</td>
+                                                    <td>&#8358; {{ number_format($comm->total_sales) }}</td>
                                                 </tr>
                                             @endforeach
                                         </tbody>

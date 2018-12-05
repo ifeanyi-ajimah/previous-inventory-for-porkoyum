@@ -103,7 +103,7 @@
                     <a href="#lagos" data-toggle="pill">
                         <h3>
                             <span class="state-name">Lagos</span>
-                            <span class="state-num"> <span>&#8373;</span>12,000,000</span>
+                            <span class="state-num"> <span>&#8358;</span>12,000,000</span>
                         </h3>
                     </a>
                 </li>
@@ -111,7 +111,7 @@
                     <a href="#abia" data-toggle="pill">
                         <h3>
                             <span class="state-name">Abia</span>
-                            <span class="state-num"> <span>&#8373;</span>200,000</span>
+                            <span class="state-num"> <span>&#8358;</span>200,000</span>
                         </h3>
                     </a>
                 </li>
@@ -119,7 +119,7 @@
                     <a href="#menu2" data-toggle="pill">
                         <h3>
                             <span class="state-name">Yola</span>
-                            <span class="state-num"> <span>&#8373;</span>50,000</span>
+                            <span class="state-num"> <span>&#8358;</span>50,000</span>
                         </h3>
                     </a>
                 </li>
@@ -127,7 +127,7 @@
                     <a href="">
                         <h3>
                             <span class="state-name">Delta</span>
-                            <span class="state-num"> <span>&#8373;</span>30,000</span>
+                            <span class="state-num"> <span>&#8358;</span>30,000</span>
                         </h3>
                     </a>
                 </li>
@@ -135,7 +135,7 @@
                     <a href="">
                         <h3>
                             <span class="state-name">Lagos</span>
-                            <span class="state-num"> <span>&#8373;</span>12,000,000</span>
+                            <span class="state-num"> <span>&#8358;</span>12,000,000</span>
                         </h3>
                     </a>
                 </li>
@@ -143,7 +143,7 @@
                     <a href="">
                         <h3>
                             <span class="state-name">Abia</span>
-                            <span class="state-num"> <span>&#8373;</span>200,000</span>
+                            <span class="state-num"> <span>&#8358;</span>200,000</span>
                         </h3>
                     </a>
                 </li>
@@ -151,7 +151,7 @@
                     <a href="">
                         <h3>
                             <span class="state-name">Yola</span>
-                            <span class="state-num"> <span>&#8373;</span>50,000</span>
+                            <span class="state-num"> <span>&#8358;</span>50,000</span>
                         </h3>
                     </a>
                 </li>
@@ -159,7 +159,7 @@
                     <a href="">
                         <h3>
                             <span class="state-name">Delta</span>
-                            <span class="state-num"> <span>&#8373;</span>30,000</span>
+                            <span class="state-num"> <span>&#8358;</span>30,000</span>
                         </h3>
                     </a>
                 </li>
@@ -167,7 +167,7 @@
                     <a href="">
                         <h3>
                             <span class="state-name">Lagos</span>
-                            <span class="state-num"> <span>&#8373;</span>12,000,000</span>
+                            <span class="state-num"> <span>&#8358;</span>12,000,000</span>
                         </h3>
                     </a>
                 </li>
@@ -175,7 +175,7 @@
                     <a href="">
                         <h3>
                             <span class="state-name">Abia</span>
-                            <span class="state-num"> <span>&#8373;</span>200,000</span>
+                            <span class="state-num"> <span>&#8358;</span>200,000</span>
                         </h3>
                     </a>
                 </li>
@@ -183,7 +183,7 @@
                     <a href="">
                         <h3>
                             <span class="state-name">Yola</span>
-                            <span class="state-num"> <span>&#8373;</span>50,000</span>
+                            <span class="state-num"> <span>&#8358;</span>50,000</span>
                         </h3>
                     </a>
                 </li>
@@ -191,7 +191,7 @@
                     <a href="">
                         <h3>
                             <span class="state-name">Delta</span>
-                            <span class="state-num"> <span>&#8373;</span>30,000</span>
+                            <span class="state-num"> <span>&#8358;</span>30,000</span>
                         </h3>
                     </a>
                 </li>
@@ -227,7 +227,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -237,7 +237,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -247,7 +247,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -257,7 +257,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -267,7 +267,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -277,7 +277,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -287,7 +287,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -297,7 +297,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -307,7 +307,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -317,7 +317,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -327,7 +327,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -337,7 +337,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -353,7 +353,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -363,7 +363,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -373,7 +373,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -383,7 +383,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -393,7 +393,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -403,7 +403,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -413,7 +413,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -423,7 +423,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -433,7 +433,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -443,7 +443,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -453,7 +453,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -463,7 +463,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -479,7 +479,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -489,7 +489,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -499,7 +499,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -509,7 +509,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -519,7 +519,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -529,7 +529,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -539,7 +539,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -549,7 +549,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -559,7 +559,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -569,7 +569,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -579,7 +579,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -589,7 +589,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -605,7 +605,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -615,7 +615,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -625,7 +625,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -635,7 +635,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -645,7 +645,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -655,7 +655,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -665,7 +665,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -675,7 +675,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -685,7 +685,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -695,7 +695,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -705,7 +705,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -715,7 +715,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -731,7 +731,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -741,7 +741,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -751,7 +751,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -761,7 +761,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -771,7 +771,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -781,7 +781,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -791,7 +791,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -801,7 +801,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -811,7 +811,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -821,7 +821,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -831,7 +831,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -841,7 +841,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -876,7 +876,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -886,7 +886,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -896,7 +896,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -906,7 +906,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -916,7 +916,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -926,7 +926,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -936,7 +936,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -946,7 +946,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -956,7 +956,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -966,7 +966,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -976,7 +976,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -986,7 +986,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1002,7 +1002,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1012,7 +1012,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1022,7 +1022,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1032,7 +1032,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1042,7 +1042,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1052,7 +1052,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1062,7 +1062,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1072,7 +1072,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1082,7 +1082,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1092,7 +1092,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1102,7 +1102,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1112,7 +1112,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1128,7 +1128,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1138,7 +1138,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1148,7 +1148,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1158,7 +1158,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1168,7 +1168,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1178,7 +1178,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1188,7 +1188,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1198,7 +1198,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1208,7 +1208,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1218,7 +1218,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1228,7 +1228,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1238,7 +1238,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1254,7 +1254,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1264,7 +1264,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1274,7 +1274,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1284,7 +1284,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1294,7 +1294,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1304,7 +1304,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1314,7 +1314,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1324,7 +1324,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1334,7 +1334,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1344,7 +1344,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1354,7 +1354,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1364,7 +1364,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1380,7 +1380,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1390,7 +1390,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1400,7 +1400,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1410,7 +1410,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1420,7 +1420,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1430,7 +1430,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1440,7 +1440,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1450,7 +1450,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1460,7 +1460,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1470,7 +1470,7 @@
                                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1480,7 +1480,7 @@
                                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1490,7 +1490,7 @@
                                         <div class="panel-heading text-center"><b>Moolato</b></div>
                                         <div class="panel-body">
                                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1510,7 +1510,7 @@
                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                         <div class="panel-body">
                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                         </div>
                     </div>
                 </div>
@@ -1520,7 +1520,7 @@
                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                         <div class="panel-body">
                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                         </div>
                     </div>
                 </div>
@@ -1530,7 +1530,7 @@
                         <div class="panel-heading text-center"><b>Moolato</b></div>
                         <div class="panel-body">
                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                         </div>
                     </div>
                 </div>
@@ -1540,7 +1540,7 @@
                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                         <div class="panel-body">
                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                         </div>
                     </div>
                 </div>
@@ -1550,7 +1550,7 @@
                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                         <div class="panel-body">
                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                         </div>
                     </div>
                 </div>
@@ -1560,7 +1560,7 @@
                         <div class="panel-heading text-center"><b>Moolato</b></div>
                         <div class="panel-body">
                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                         </div>
                     </div>
                 </div>
@@ -1570,7 +1570,7 @@
                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                         <div class="panel-body">
                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                         </div>
                     </div>
                 </div>
@@ -1580,7 +1580,7 @@
                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                         <div class="panel-body">
                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                         </div>
                     </div>
                 </div>
@@ -1590,7 +1590,7 @@
                         <div class="panel-heading text-center"><b>Moolato</b></div>
                         <div class="panel-body">
                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                         </div>
                     </div>
                 </div>
@@ -1600,7 +1600,7 @@
                         <div class="panel-heading text-center"><b>Flattummy</b></div>
                         <div class="panel-body">
                             <p>QTY: <span class="h4 pull-right">100</span></p>
-                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                         </div>
                     </div>
                 </div>
@@ -1610,7 +1610,7 @@
                         <div class="panel-heading text-center"><b>Slim Tea</b></div>
                         <div class="panel-body">
                             <p>QTY: <span class="h4 pull-right">80</span></p>
-                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                         </div>
                     </div>
                 </div>
@@ -1620,7 +1620,7 @@
                         <div class="panel-heading text-center"><b>Moolato</b></div>
                         <div class="panel-body">
                             <p>QTY: <span class="h4 pull-right">110</span></p>
-                            <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                            <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                         </div>
                     </div>
                 </div>
@@ -1635,7 +1635,7 @@
                     <div class="panel-heading text-center"><b>Flattummy</b></div>
                     <div class="panel-body">
                         <p>QTY: <span class="h4 pull-right">100</span></p>
-                        <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                        <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                     </div>
                 </div>
             </div>
@@ -1645,7 +1645,7 @@
                     <div class="panel-heading text-center"><b>Slim Tea</b></div>
                     <div class="panel-body">
                         <p>QTY: <span class="h4 pull-right">80</span></p>
-                        <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                        <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                     </div>
                 </div>
             </div>
@@ -1655,7 +1655,7 @@
                     <div class="panel-heading text-center"><b>Moolato</b></div>
                     <div class="panel-body">
                         <p>QTY: <span class="h4 pull-right">110</span></p>
-                        <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                        <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                     </div>
                 </div>
             </div>
@@ -1665,7 +1665,7 @@
                     <div class="panel-heading text-center"><b>Flattummy</b></div>
                     <div class="panel-body">
                         <p>QTY: <span class="h4 pull-right">100</span></p>
-                        <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                        <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                     </div>
                 </div>
             </div>
@@ -1675,7 +1675,7 @@
                     <div class="panel-heading text-center"><b>Slim Tea</b></div>
                     <div class="panel-body">
                         <p>QTY: <span class="h4 pull-right">80</span></p>
-                        <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                        <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                     </div>
                 </div>
             </div>
@@ -1685,7 +1685,7 @@
                     <div class="panel-heading text-center"><b>Slim Tea</b></div>
                     <div class="panel-body">
                         <p>QTY: <span class="h4 pull-right">80</span></p>
-                        <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                        <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                     </div>
                 </div>
             </div>
@@ -1695,7 +1695,7 @@
                     <div class="panel-heading text-center"><b>Moolato</b></div>
                     <div class="panel-body">
                         <p>QTY: <span class="h4 pull-right">110</span></p>
-                        <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                        <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                     </div>
                 </div>
             </div>
@@ -1705,7 +1705,7 @@
                     <div class="panel-heading text-center"><b>Flattummy</b></div>
                     <div class="panel-body">
                         <p>QTY: <span class="h4 pull-right">100</span></p>
-                        <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,500,000</span></p>
+                        <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,500,000</span></p>
                     </div>
                 </div>
             </div>
@@ -1715,7 +1715,7 @@
                     <div class="panel-heading text-center"><b>Slim Tea</b></div>
                     <div class="panel-body">
                         <p>QTY: <span class="h4 pull-right">80</span></p>
-                        <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>120,000</span></p>
+                        <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>120,000</span></p>
                     </div>
                 </div>
             </div>
@@ -1725,7 +1725,7 @@
                     <div class="panel-heading text-center"><b>Moolato</b></div>
                     <div class="panel-body">
                         <p>QTY: <span class="h4 pull-right">110</span></p>
-                        <p>Value: <span class="h4 pull-right"> <span>&#8373;</span>1,100,000</span></p>
+                        <p>Value: <span class="h4 pull-right"> <span>&#8358;</span>1,100,000</span></p>
                     </div>
                 </div>
             </div>

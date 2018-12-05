@@ -8,5 +8,5 @@
   bottom: -100px;
   /*padding-top:20px;*/
   left: 0; right: 0;">
-    <p class="text-center">Copyright Truerebel | All rights reserved</p>
+    <p class="text-center">Copyright The Porkoyum Company | All rights reserved</p>
 </footer>
