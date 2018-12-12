@@ -24,6 +24,17 @@ class OrderController extends Controller
 
     }
 
+    public function apiOrderDeleted(Request $request)
+    {
+        $modifiedOrders = Order::where('onlineID',$request->id)->get();
+
+        //modify entries for each order above
+        foreach ($modifiedOrders as $key => $theOrder) {
+            $theOrder->delete();
+        }
+
+        return response()->json(['message' => 'Order deleted'],200);
+    }
 
     public function apiOrderUpdated(Request $request)
     {
@@ -64,7 +75,7 @@ class OrderController extends Controller
             $theOrder->save();
         }
 
-        return response()->json(['message' => 'Order created'],200);
+        return response()->json(['message' => 'Order updated'],200);
     }
 
     public function apiOrderCreated(Request $request)
