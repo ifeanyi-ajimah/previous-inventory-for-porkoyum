@@ -147,10 +147,10 @@
                             <a href="{{ url('/dashboard') }}"><button class="db">Dashboard</button></a>
                         @else
                             <a href="{{ url('/login') }}" class="m-b-ml">
-                                <button disabled class="bd_1 hidden-xs"><img src="img/Nigeria.ico" alt="ico">Nigeria</button>
+                                <button  class="bd_1 hidden-xs"><img src="img/Nigeria.ico" alt="ico">Nigeria</button>
                                 <!--mobile--><button class="bd_1 visible-xs"><img src="img/Nigeria.ico" alt="ico">NIG</button></a><!--/mobile-->
                             <a href="{{ url('/login') }}" class="m-b-ml">
-                                <button class="hidden-xs"><img src="img/Ghana.ico" alt="ico">Ghana</button>
+                                <button disabled class="hidden-xs"><img src="img/Ghana.ico" alt="ico">Ghana</button>
                             <!--mobile--> <button disabled class="visible-xs"><img src="img/Ghana.ico" alt="ico">GHN</button></a><!--/mobile-->
                             <a href="{{ url('/login') }}" class="m-b-ml">
                                 <button disabled class="hidden-xs"><img src="img/Kenya.ico" alt="ico">Kenya</button>

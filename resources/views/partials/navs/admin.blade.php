@@ -1,4 +1,4 @@
-                                <li class="dropdown">
+                                <!-- <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                         Inventory <span class="caret"></span>
                                     </a>
@@ -6,7 +6,7 @@
                                         <li><a href="{{ url('inventory/accra') }}"></span>&nbsp; Accra</a></li>
                                         <li><a href="{{ url('inventory/regions') }}"></span>&nbsp; Other Regions</a></li>
                                     </ul>
-                                </li>
+                                </li> -->
                                 <li>
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                         Orders <span class="caret"></span>
@@ -47,7 +47,7 @@
                                         <li><a href="{{ route('permissions.index') }}"><span class="glyphicon glyphicon-check"></span>&nbsp; Permissions</a></li>
                                         <li><a href="{{ route('commsexecs.index') }}"><span class="glyphicon glyphicon-user"></span>&nbsp; Comms Personnel</a></li>
                                         <li><a href="{{ route('products.index') }}"><span class="glyphicon glyphicon-th-list"></span>&nbsp; Products</a></li>
-                                        <li><a href="{{ route('deliverypersons.index') }}"><span class="glyphicon glyphicon-plane"></span>&nbsp; Delivery Persons</a></li>
+                                        <!-- <li><a href="{{ route('deliverypersons.index') }}"><span class="glyphicon glyphicon-plane"></span>&nbsp; Delivery Persons</a></li> -->
                                         <li><a href="/states"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;Regions</a></li>
                                         <li><a href="/region"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;Service Zone</a></li>
                                     </ul>
