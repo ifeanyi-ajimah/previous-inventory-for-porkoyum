@@ -15,6 +15,7 @@ Route::get('/', function () { return view('welcome'); });
 
 Route::post('webhooksorder', 'OrderController@apiOrderCreated');
 Route::post('webhooksorderupdate', 'OrderController@apiOrderUpdated');
+Route::post('webhooksorderdelete', 'OrderController@apiOrderDeleted');
 
 // Route::get('test', 'InventoryController@index');
 // Route::get('test-prod/{id}/comms', "ProductCategoryController@commsReps");
@@ -22,7 +23,7 @@ Route::post('webhooksorderupdate', 'OrderController@apiOrderUpdated');
 
 Route::get('/home', function () { return redirect('/dashboard'); });
 
-Route::get('/pee', 'OrderController@apiStore');
+Route::get('/pee', 'OrderController@apiOrderUpdated');
 
 Auth::routes();
 
@@ -108,9 +109,9 @@ Route::middleware('auth')->group(function (){
 		Route::get('/productcategories', 'ProductCategoryController@index')->name('productcat.index');
 		Route::get('/productcategories/{id}/view', 'ProductCategoryController@show')->name('productcat.show');
 
-		
 
-	
+
+
 
 		/*Route::get('/products-index','ProductController@index')->name('products.index');
 		Route::get('/products/{id}','ProductController@show')->name('products.show');
