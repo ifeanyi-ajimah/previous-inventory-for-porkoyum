@@ -11,6 +11,9 @@
 |
 */
 
+Route::post('/hrreg','HrAppController@hrregistration');
+Route::post('/hrlog','HrAppController@hrlogin');
+
 Route::get('/', function () { return view('welcome'); });
 
 Route::post('webhooksorder', 'OrderController@apiOrderCreated');
