@@ -344,7 +344,6 @@ class OrderController extends Controller
     {
         $product_cat = $order->product->product_cat;
 
-        $commsexecs = $product_cat->comms_execs;
         $comms = [];
         foreach ($commsexecs as $commsexec) {
             $comms[$commsexec->id] = $commsexec->display_name;

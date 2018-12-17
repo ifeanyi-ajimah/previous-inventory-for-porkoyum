@@ -2,7 +2,7 @@
     <h4 class="headings">Customers</h4>
     <ul>
         <li><span class="glyphicon glyphicon-plus"></span>&nbsp; Add Customer</li>
-        <li><span class="glyphicon glyphicon-user"></span>&nbsp; Existing Customers</li>
+        <li><span class="glyphicon glyphicon-user"></span>&nbsp; All Customers</li>
     </ul>
     <h4 class="headings">Orders</h4>
     <ul>

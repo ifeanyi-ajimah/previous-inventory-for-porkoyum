@@ -47,8 +47,8 @@
                         <th>S/N</th>
                         <th>Product Category</th>
                         <th>Product</th>
-                        <th>Date Created</th>
-                        <th colspan="2">Actions</th>
+                        <th>Date Created</th><!-- 
+                        <th colspan="2">Actions</th> -->
                     </tr>
                     </thead>
                     <tbody>
@@ -59,8 +59,8 @@
                                 <td>{{ $customerOrder->product->product_name }}</td>
                                 <td>{{ formatDate($customerOrder->created_at) }}</td>
                                 <td>
-                                    <a class="btn btn-primary" href="{{ route('orders.edit', $customerOrder->id) }}">Edit</a>
-                                    <a class="btn btn-primary" href="{{ route('orders.show', $customerOrder->id) }}">View</a>
+                                    <!-- <a class="btn btn-primary" href="{{ route('orders.edit', $customerOrder->id) }}">Edit</a> -->
+                                    <!-- <a class="btn btn-primary" href="{{ route('orders.show', $customerOrder->id) }}">View</a> -->
                                 </td>
                                 <td>
                                     {{--{!! Form::open(['method' => 'DELETE', 'route' => ['permissions.destroy', $permission->id]]) !!}--}}

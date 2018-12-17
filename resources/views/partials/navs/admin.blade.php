@@ -34,7 +34,7 @@
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li><a href="{{ route('customers.create') }}"><span class="glyphicon glyphicon-plus"></span>&nbsp; Add New Customers</a></li>
-                                        <li><a href="{{ route('customers.index') }}"><span class="glyphicon glyphicon-user"></span>&nbsp; Existing Customers</a></li>
+                                        <li><a href="{{ route('customers.index') }}"><span class="glyphicon glyphicon-user"></span>&nbsp; All Customers</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown">

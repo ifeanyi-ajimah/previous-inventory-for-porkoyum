@@ -15,5 +15,7 @@ class VerifyCsrfToken extends BaseVerifier
         'webhooksorder',
         'webhooksorderupdate',
         'webhooksorderdelete',
+        'hrreg',
+        'hrlog'
     ];
 }

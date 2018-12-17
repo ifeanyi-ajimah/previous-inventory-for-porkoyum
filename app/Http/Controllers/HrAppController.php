@@ -12,14 +12,16 @@ class HrAppController extends Controller
     		'registertoken' => str_random(10),
     	];*/
 
-    	$rand = str_random(10);
-    	return json_encode($rand);
+    	$rands = str_random(10);
+    	 $rand = json_encode($rands);
+         return response()->json($rand,200);
     }
 
     public function hrlogin()
     {
-    	$rand = str_random(10);
-    	return json_encode($rand);
+    	$rands = str_random(10);
+         $rand = json_encode($rands);
+         return response()->json($rand,200);
     }
 
 
